@@ -1,0 +1,20 @@
+Copyright (c) 2019, Gary Allen Vollink.  http://voll.ink/playlister
+All rights reserved.
+
+Licence to use, see CDDLICENSE.txt file in this distribution.
+
+DEPENDENCIES
+
+For run-time on Debian derived systems (including Raspbian and Ubuntu)
+the following package should be installed through the system package manager:
+  libxml2
+
+For compiling on Debian derived systems (including Raspbian and Ubuntu)
+the following package should be installed through the system package manager:
+  libxml2-dev
+Additionally, the following software package should be cloned into this
+software's main folder (where main.c is located).
+  https://troydhanson.github.io/uthash/
+  git clone https://github.com/troydhanson/uthash.git
+
+# playlister/DEPENDS $Rev: 33 $

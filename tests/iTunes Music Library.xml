@@ -1,0 +1,2287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Major Version</key><integer>1</integer>
+	<key>Minor Version</key><integer>1</integer>
+	<key>Application Version</key><string>12.9.5.5</string>
+	<key>Date</key><date>2019-11-02T20:44:46Z</date>
+	<key>Features</key><integer>5</integer>
+	<key>Show Content Ratings</key><true/>
+	<key>Library Persistent ID</key><string>F60BBBD97C7D8F41</string>
+	<key>Tracks</key>
+	<dict>
+		<key>131</key>
+		<dict>
+			<key>Track ID</key><integer>131</integer>
+			<key>Size</key><integer>7097595</integer>
+			<key>Total Time</key><integer>189493</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>6</integer>
+			<key>Track Count</key><integer>11</integer>
+			<key>Year</key><integer>1972</integer>
+			<key>Date Modified</key><date>2019-02-13T04:53:29Z</date>
+			<key>Date Added</key><date>2009-06-29T00:27:37Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Release Date</key><date>1972-05-01T07:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>B579225D43482C43</string>
+			<key>Track Type</key><string>Remote</string>
+			<key>Purchased</key><true/>
+			<key>Name</key><string>Everything Stops for Tea</string>
+			<key>Artist</key><string>Long John Baldry</string>
+			<key>Album Artist</key><string>Long John Baldry</string>
+			<key>Composer</key><string>Al Goodhart, Al Hoffman &#38; Maurice Sigler</string>
+			<key>Album</key><string>Everything Stops for Tea</string>
+			<key>Genre</key><string>Blues</string>
+			<key>Kind</key><string>Purchased AAC audio file</string>
+			<key>Sort Name</key><string>Everything Stops for Tea</string>
+			<key>Sort Album</key><string>Everything Stops for Tea</string>
+			<key>Sort Artist</key><string>Long John Baldry</string>
+		</dict>
+		<key>133</key>
+		<dict>
+			<key>Track ID</key><integer>133</integer>
+			<key>Size</key><integer>7145461</integer>
+			<key>Total Time</key><integer>195880</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>3</integer>
+			<key>Track Count</key><integer>12</integer>
+			<key>Year</key><integer>2003</integer>
+			<key>Date Modified</key><date>2019-02-13T04:53:29Z</date>
+			<key>Date Added</key><date>2008-04-11T01:55:34Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Release Date</key><date>2003-03-04T12:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>5709684F6A33AE55</string>
+			<key>Track Type</key><string>Remote</string>
+			<key>Purchased</key><true/>
+			<key>Name</key><string>Everybody's Fool</string>
+			<key>Artist</key><string>Evanescence</string>
+			<key>Album Artist</key><string>Evanescence</string>
+			<key>Album</key><string>Fallen</string>
+			<key>Genre</key><string>Alternative</string>
+			<key>Kind</key><string>Purchased AAC audio file</string>
+			<key>Sort Name</key><string>Everybody's Fool</string>
+			<key>Sort Album</key><string>Fallen</string>
+			<key>Sort Artist</key><string>Evanescence</string>
+		</dict>
+		<key>135</key>
+		<dict>
+			<key>Track ID</key><integer>135</integer>
+			<key>Size</key><integer>297909644</integer>
+			<key>Total Time</key><integer>1373832</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Track Count</key><integer>14</integer>
+			<key>Year</key><integer>2007</integer>
+			<key>Date Modified</key><date>2019-02-13T04:53:29Z</date>
+			<key>Date Added</key><date>2007-09-27T00:57:07Z</date>
+			<key>Play Count</key><integer>1</integer>
+			<key>Play Date</key><integer>4294949296</integer>
+			<key>Play Date UTC</key><date>1904-01-01T00:00:00Z</date>
+			<key>Release Date</key><date>2007-09-19T07:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Season</key><integer>1</integer>
+			<key>Episode Order</key><integer>1</integer>
+			<key>Persistent ID</key><string>F5528412A334379E</string>
+			<key>Track Type</key><string>Remote</string>
+			<key>Purchased</key><true/>
+			<key>TV Show</key><true/>
+			<key>Has Video</key><true/>
+			<key>Name</key><string>Pilot</string>
+			<key>Artist</key><string>Back to You</string>
+			<key>Album</key><string>Back to You, Season 1</string>
+			<key>Genre</key><string>Comedy</string>
+			<key>Kind</key><string>Purchased MPEG-4 video file</string>
+			<key>Sort Name</key><string>Pilot</string>
+			<key>Sort Album</key><string>Back to You, Season 1</string>
+			<key>Sort Artist</key><string>Back to You</string>
+			<key>Content Rating</key><string>us-tv|TV-14|500|</string>
+			<key>Series</key><string>Back to You</string>
+			<key>Episode</key><string>101</string>
+		</dict>
+		<key>137</key>
+		<dict>
+			<key>Track ID</key><integer>137</integer>
+			<key>Size</key><integer>79359593</integer>
+			<key>Total Time</key><integer>303775</integer>
+			<key>Year</key><integer>2007</integer>
+			<key>Date Modified</key><date>2019-02-13T04:53:29Z</date>
+			<key>Date Added</key><date>2007-07-15T04:09:10Z</date>
+			<key>Play Count</key><integer>1</integer>
+			<key>Play Date</key><integer>4294949296</integer>
+			<key>Play Date UTC</key><date>1904-01-01T00:00:00Z</date>
+			<key>Release Date</key><date>2007-06-29T07:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>65F877D2EADBCFAF</string>
+			<key>Track Type</key><string>Remote</string>
+			<key>Purchased</key><true/>
+			<key>Movie</key><true/>
+			<key>Has Video</key><true/>
+			<key>Name</key><string>Lifted</string>
+			<key>Artist</key><string>Pixar</string>
+			<key>Genre</key><string>Short Films</string>
+			<key>Kind</key><string>Purchased MPEG-4 video file</string>
+			<key>Sort Name</key><string>Lifted</string>
+			<key>Sort Artist</key><string>Pixar</string>
+			<key>Content Rating</key><string>riaa||0|</string>
+		</dict>
+		<key>139</key>
+		<dict>
+			<key>Track ID</key><integer>139</integer>
+			<key>Size</key><integer>50288120</integer>
+			<key>Total Time</key><integer>220887</integer>
+			<key>Year</key><integer>2003</integer>
+			<key>Date Modified</key><date>2019-02-13T04:53:29Z</date>
+			<key>Date Added</key><date>2006-08-24T11:58:26Z</date>
+			<key>Release Date</key><date>2003-04-28T07:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>5332D42A0837EB78</string>
+			<key>Track Type</key><string>Remote</string>
+			<key>Purchased</key><true/>
+			<key>Music Video</key><true/>
+			<key>Has Video</key><true/>
+			<key>Name</key><string>White Flag</string>
+			<key>Artist</key><string>Dido</string>
+			<key>Genre</key><string>Pop</string>
+			<key>Kind</key><string>Purchased MPEG-4 video file</string>
+			<key>Sort Name</key><string>White Flag</string>
+			<key>Sort Artist</key><string>Dido</string>
+		</dict>
+		<key>141</key>
+		<dict>
+			<key>Track ID</key><integer>141</integer>
+			<key>Size</key><integer>443509866</integer>
+			<key>Total Time</key><integer>2188502</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>3</integer>
+			<key>Track Count</key><integer>25</integer>
+			<key>Year</key><integer>2007</integer>
+			<key>Date Modified</key><date>2019-02-13T04:53:29Z</date>
+			<key>Date Added</key><date>2007-06-21T02:34:32Z</date>
+			<key>Play Count</key><integer>1</integer>
+			<key>Play Date</key><integer>4294949296</integer>
+			<key>Play Date UTC</key><date>1904-01-01T00:00:00Z</date>
+			<key>Release Date</key><date>2007-06-18T07:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Episode Order</key><integer>3</integer>
+			<key>Persistent ID</key><string>DEA0CDD7890CF713</string>
+			<key>Track Type</key><string>Remote</string>
+			<key>Purchased</key><true/>
+			<key>TV Show</key><true/>
+			<key>Has Video</key><true/>
+			<key>Name</key><string>2006 Finals - BMX Park</string>
+			<key>Artist</key><string>AST Dew Tour</string>
+			<key>Album</key><string>AST Dew Tour 2007</string>
+			<key>Genre</key><string>Sports</string>
+			<key>Kind</key><string>Purchased MPEG-4 video file</string>
+			<key>Sort Name</key><string>2006 Finals - BMX Park</string>
+			<key>Sort Album</key><string>AST Dew Tour 2007</string>
+			<key>Sort Artist</key><string>AST Dew Tour</string>
+			<key>Content Rating</key><string>us-tv|TV-14|500|</string>
+			<key>Series</key><string>AST Dew Tour</string>
+			<key>Episode</key><string>DT200603</string>
+		</dict>
+		<key>143</key>
+		<dict>
+			<key>Track ID</key><integer>143</integer>
+			<key>Size</key><integer>434349271</integer>
+			<key>Total Time</key><integer>2134733</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>2</integer>
+			<key>Track Count</key><integer>25</integer>
+			<key>Year</key><integer>2007</integer>
+			<key>Date Modified</key><date>2019-02-13T04:53:29Z</date>
+			<key>Date Added</key><date>2007-06-21T02:34:19Z</date>
+			<key>Play Count</key><integer>1</integer>
+			<key>Play Date</key><integer>4294949296</integer>
+			<key>Play Date UTC</key><date>1904-01-01T00:00:00Z</date>
+			<key>Release Date</key><date>2007-06-18T07:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Episode Order</key><integer>2</integer>
+			<key>Persistent ID</key><string>C9D424728FC4567F</string>
+			<key>Track Type</key><string>Remote</string>
+			<key>Purchased</key><true/>
+			<key>TV Show</key><true/>
+			<key>Has Video</key><true/>
+			<key>Name</key><string>2006 Finals - Skate Park</string>
+			<key>Artist</key><string>AST Dew Tour</string>
+			<key>Album</key><string>AST Dew Tour 2007</string>
+			<key>Genre</key><string>Sports</string>
+			<key>Kind</key><string>Purchased MPEG-4 video file</string>
+			<key>Sort Name</key><string>2006 Finals - Skate Park</string>
+			<key>Sort Album</key><string>AST Dew Tour 2007</string>
+			<key>Sort Artist</key><string>AST Dew Tour</string>
+			<key>Content Rating</key><string>us-tv|TV-14|500|</string>
+			<key>Series</key><string>AST Dew Tour</string>
+			<key>Episode</key><string>DT200602</string>
+		</dict>
+		<key>145</key>
+		<dict>
+			<key>Track ID</key><integer>145</integer>
+			<key>Size</key><integer>394421563</integer>
+			<key>Total Time</key><integer>1934847</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Track Count</key><integer>25</integer>
+			<key>Year</key><integer>2007</integer>
+			<key>Date Modified</key><date>2019-02-13T04:53:29Z</date>
+			<key>Date Added</key><date>2007-06-21T02:34:02Z</date>
+			<key>Play Count</key><integer>1</integer>
+			<key>Play Date</key><integer>4294949296</integer>
+			<key>Play Date UTC</key><date>1904-01-01T00:00:00Z</date>
+			<key>Release Date</key><date>2007-06-18T07:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Episode Order</key><integer>1</integer>
+			<key>Persistent ID</key><string>2084853480100E86</string>
+			<key>Track Type</key><string>Remote</string>
+			<key>Purchased</key><true/>
+			<key>TV Show</key><true/>
+			<key>Has Video</key><true/>
+			<key>Name</key><string>2006 Finals - BMX Dirt</string>
+			<key>Artist</key><string>AST Dew Tour</string>
+			<key>Album</key><string>AST Dew Tour 2007</string>
+			<key>Genre</key><string>Sports</string>
+			<key>Kind</key><string>Purchased MPEG-4 video file</string>
+			<key>Sort Name</key><string>2006 Finals - BMX Dirt</string>
+			<key>Sort Album</key><string>AST Dew Tour 2007</string>
+			<key>Sort Artist</key><string>AST Dew Tour</string>
+			<key>Content Rating</key><string>us-tv|TV-14|500|</string>
+			<key>Series</key><string>AST Dew Tour</string>
+			<key>Episode</key><string>DT200601</string>
+		</dict>
+		<key>147</key>
+		<dict>
+			<key>Track ID</key><integer>147</integer>
+			<key>Size</key><integer>19370260</integer>
+			<key>Total Time</key><integer>600351</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>14</integer>
+			<key>Track Count</key><integer>14</integer>
+			<key>Year</key><integer>2001</integer>
+			<key>Date Modified</key><date>2019-02-13T04:53:29Z</date>
+			<key>Date Added</key><date>2009-03-30T14:35:55Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Release Date</key><date>2001-02-26T12:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>E3CAC88D993BC610</string>
+			<key>Track Type</key><string>Remote</string>
+			<key>Purchased</key><true/>
+			<key>Name</key><string>Too Long</string>
+			<key>Artist</key><string>Daft Punk</string>
+			<key>Album Artist</key><string>Daft Punk</string>
+			<key>Album</key><string>Discovery</string>
+			<key>Genre</key><string>Electronic</string>
+			<key>Kind</key><string>Purchased AAC audio file</string>
+			<key>Sort Name</key><string>Too Long</string>
+			<key>Sort Album</key><string>Discovery</string>
+			<key>Sort Artist</key><string>Daft Punk</string>
+		</dict>
+		<key>149</key>
+		<dict>
+			<key>Track ID</key><integer>149</integer>
+			<key>Size</key><integer>7720900</integer>
+			<key>Total Time</key><integer>240233</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>13</integer>
+			<key>Track Count</key><integer>14</integer>
+			<key>Year</key><integer>2001</integer>
+			<key>Date Modified</key><date>2019-02-13T04:53:29Z</date>
+			<key>Date Added</key><date>2009-03-30T14:35:55Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Release Date</key><date>2001-02-26T12:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>16F89AB80CE5AC44</string>
+			<key>Track Type</key><string>Remote</string>
+			<key>Purchased</key><true/>
+			<key>Name</key><string>Face to Face</string>
+			<key>Artist</key><string>Daft Punk</string>
+			<key>Album Artist</key><string>Daft Punk</string>
+			<key>Album</key><string>Discovery</string>
+			<key>Genre</key><string>Electronic</string>
+			<key>Kind</key><string>Purchased AAC audio file</string>
+			<key>Sort Name</key><string>Face to Face</string>
+			<key>Sort Album</key><string>Discovery</string>
+			<key>Sort Artist</key><string>Daft Punk</string>
+		</dict>
+		<key>151</key>
+		<dict>
+			<key>Track ID</key><integer>151</integer>
+			<key>Size</key><integer>6641876</integer>
+			<key>Total Time</key><integer>206934</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>12</integer>
+			<key>Track Count</key><integer>14</integer>
+			<key>Year</key><integer>2001</integer>
+			<key>Date Modified</key><date>2019-02-13T04:53:29Z</date>
+			<key>Date Added</key><date>2009-03-30T14:35:55Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Release Date</key><date>2001-02-26T12:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>3781B59ED34EC539</string>
+			<key>Track Type</key><string>Remote</string>
+			<key>Purchased</key><true/>
+			<key>Name</key><string>Short Circuit</string>
+			<key>Artist</key><string>Daft Punk</string>
+			<key>Album Artist</key><string>Daft Punk</string>
+			<key>Album</key><string>Discovery</string>
+			<key>Genre</key><string>Electronic</string>
+			<key>Kind</key><string>Purchased AAC audio file</string>
+			<key>Sort Name</key><string>Short Circuit</string>
+			<key>Sort Album</key><string>Discovery</string>
+			<key>Sort Artist</key><string>Daft Punk</string>
+		</dict>
+		<key>153</key>
+		<dict>
+			<key>Track ID</key><integer>153</integer>
+			<key>Size</key><integer>435594676</integer>
+			<key>Total Time</key><integer>2133680</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>4</integer>
+			<key>Track Count</key><integer>25</integer>
+			<key>Year</key><integer>2007</integer>
+			<key>Date Modified</key><date>2019-02-13T04:53:29Z</date>
+			<key>Date Added</key><date>2007-06-21T02:35:04Z</date>
+			<key>Play Count</key><integer>1</integer>
+			<key>Play Date</key><integer>4294949296</integer>
+			<key>Play Date UTC</key><date>1904-01-01T00:00:00Z</date>
+			<key>Release Date</key><date>2007-06-18T07:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Episode Order</key><integer>4</integer>
+			<key>Persistent ID</key><string>825E112B55A75CCF</string>
+			<key>Track Type</key><string>Remote</string>
+			<key>Purchased</key><true/>
+			<key>TV Show</key><true/>
+			<key>Has Video</key><true/>
+			<key>Name</key><string>2006 Finals - Skate Vert</string>
+			<key>Artist</key><string>AST Dew Tour</string>
+			<key>Album</key><string>AST Dew Tour 2007</string>
+			<key>Genre</key><string>Sports</string>
+			<key>Kind</key><string>Purchased MPEG-4 video file</string>
+			<key>Sort Name</key><string>2006 Finals - Skate Vert</string>
+			<key>Sort Album</key><string>AST Dew Tour 2007</string>
+			<key>Sort Artist</key><string>AST Dew Tour</string>
+			<key>Content Rating</key><string>us-tv|TV-14|500|</string>
+			<key>Series</key><string>AST Dew Tour</string>
+			<key>Episode</key><string>DT200604</string>
+		</dict>
+		<key>155</key>
+		<dict>
+			<key>Track ID</key><integer>155</integer>
+			<key>Size</key><integer>56689559</integer>
+			<key>Total Time</key><integer>253497</integer>
+			<key>Year</key><integer>2008</integer>
+			<key>Date Modified</key><date>2019-02-13T04:53:29Z</date>
+			<key>Date Added</key><date>2008-03-23T00:45:57Z</date>
+			<key>Release Date</key><date>2008-03-18T07:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>A86F6E04ABD1A91B</string>
+			<key>Track Type</key><string>Remote</string>
+			<key>Purchased</key><true/>
+			<key>Music Video</key><true/>
+			<key>Has Video</key><true/>
+			<key>Name</key><string>Living Well Is the Best Revenge (Vincent Moon Version)</string>
+			<key>Artist</key><string>R.E.M.</string>
+			<key>Genre</key><string>Rock</string>
+			<key>Kind</key><string>Purchased MPEG-4 video file</string>
+			<key>Sort Name</key><string>Living Well Is the Best Revenge (Vincent Moon Version)</string>
+			<key>Sort Artist</key><string>R.E.M.</string>
+		</dict>
+		<key>157</key>
+		<dict>
+			<key>Track ID</key><integer>157</integer>
+			<key>Size</key><integer>662281830</integer>
+			<key>Total Time</key><integer>2586460</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>11</integer>
+			<key>Track Count</key><integer>12</integer>
+			<key>Year</key><integer>2007</integer>
+			<key>Date Modified</key><date>2019-02-13T04:53:29Z</date>
+			<key>Date Added</key><date>2008-07-16T15:49:19Z</date>
+			<key>Play Count</key><integer>1</integer>
+			<key>Release Date</key><date>2007-09-20T07:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Season</key><integer>1</integer>
+			<key>Episode Order</key><integer>11</integer>
+			<key>Persistent ID</key><string>0502143478227CFF</string>
+			<key>Track Type</key><string>Remote</string>
+			<key>Purchased</key><true/>
+			<key>TV Show</key><true/>
+			<key>Has Video</key><true/>
+			<key>Name</key><string>Loose Ends, Pt. 1</string>
+			<key>Artist</key><string>Burn Notice</string>
+			<key>Album</key><string>Burn Notice, Season 1</string>
+			<key>Genre</key><string>Drama</string>
+			<key>Kind</key><string>Purchased MPEG-4 video file</string>
+			<key>Sort Name</key><string>Loose Ends, Pt. 1</string>
+			<key>Sort Album</key><string>Burn Notice, Season 1</string>
+			<key>Sort Artist</key><string>Burn Notice</string>
+			<key>Content Rating</key><string>us-tv|TV-PG|400|</string>
+			<key>Series</key><string>Burn Notice</string>
+			<key>Episode</key><string>111</string>
+		</dict>
+		<key>159</key>
+		<dict>
+			<key>Track ID</key><integer>159</integer>
+			<key>Size</key><integer>6725737</integer>
+			<key>Total Time</key><integer>198440</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>2</integer>
+			<key>Track Count</key><integer>11</integer>
+			<key>Year</key><integer>2008</integer>
+			<key>Date Modified</key><date>2019-02-13T04:53:29Z</date>
+			<key>Date Added</key><date>2009-04-24T01:31:55Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Release Date</key><date>2008-08-30T07:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>E48378F370536678</string>
+			<key>Track Type</key><string>Remote</string>
+			<key>Purchased</key><true/>
+			<key>Name</key><string>Walking On a Dream</string>
+			<key>Artist</key><string>Empire of the Sun</string>
+			<key>Album Artist</key><string>Empire of the Sun</string>
+			<key>Composer</key><string>Luke Steele, Nick Littlemore &#38; Jonathan Sloan</string>
+			<key>Album</key><string>Walking On a Dream</string>
+			<key>Genre</key><string>Alternative</string>
+			<key>Kind</key><string>Purchased AAC audio file</string>
+			<key>Sort Name</key><string>Walking On a Dream</string>
+			<key>Sort Album</key><string>Walking On a Dream</string>
+			<key>Sort Artist</key><string>Empire of the Sun</string>
+		</dict>
+		<key>161</key>
+		<dict>
+			<key>Track ID</key><integer>161</integer>
+			<key>Size</key><integer>7197361</integer>
+			<key>Total Time</key><integer>200165</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Track Count</key><integer>11</integer>
+			<key>Year</key><integer>2009</integer>
+			<key>Date Modified</key><date>2019-02-13T04:53:29Z</date>
+			<key>Date Added</key><date>2009-11-02T16:43:58Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Release Date</key><date>2009-10-19T12:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>CE41C4F3F7730394</string>
+			<key>Track Type</key><string>Remote</string>
+			<key>Purchased</key><true/>
+			<key>Name</key><string>According to You</string>
+			<key>Artist</key><string>Orianthi</string>
+			<key>Album Artist</key><string>Orianthi</string>
+			<key>Composer</key><string>Steve Diamond &#38; Andrew Frampton</string>
+			<key>Album</key><string>Believe</string>
+			<key>Genre</key><string>Pop</string>
+			<key>Kind</key><string>Purchased AAC audio file</string>
+			<key>Sort Name</key><string>According to You</string>
+			<key>Sort Album</key><string>Believe</string>
+			<key>Sort Artist</key><string>Orianthi</string>
+		</dict>
+		<key>163</key>
+		<dict>
+			<key>Track ID</key><integer>163</integer>
+			<key>Size</key><integer>6871134</integer>
+			<key>Total Time</key><integer>186653</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>5</integer>
+			<key>Track Count</key><integer>12</integer>
+			<key>Year</key><integer>2003</integer>
+			<key>Date Modified</key><date>2019-02-13T04:53:29Z</date>
+			<key>Date Added</key><date>2008-04-11T01:55:34Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Release Date</key><date>2003-03-04T12:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>7F1A1CD9ACBA203D</string>
+			<key>Track Type</key><string>Remote</string>
+			<key>Purchased</key><true/>
+			<key>Name</key><string>Haunted</string>
+			<key>Artist</key><string>Evanescence</string>
+			<key>Album Artist</key><string>Evanescence</string>
+			<key>Album</key><string>Fallen</string>
+			<key>Genre</key><string>Alternative</string>
+			<key>Kind</key><string>Purchased AAC audio file</string>
+			<key>Sort Name</key><string>Haunted</string>
+			<key>Sort Album</key><string>Fallen</string>
+			<key>Sort Artist</key><string>Evanescence</string>
+		</dict>
+		<key>165</key>
+		<dict>
+			<key>Track ID</key><integer>165</integer>
+			<key>Size</key><integer>10037539</integer>
+			<key>Total Time</key><integer>278067</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>6</integer>
+			<key>Track Count</key><integer>12</integer>
+			<key>Year</key><integer>2003</integer>
+			<key>Date Modified</key><date>2019-02-13T04:53:29Z</date>
+			<key>Date Added</key><date>2008-04-11T01:55:34Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Release Date</key><date>2003-03-04T12:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>65A0022F64A8EF92</string>
+			<key>Track Type</key><string>Remote</string>
+			<key>Purchased</key><true/>
+			<key>Name</key><string>Tourniquet</string>
+			<key>Artist</key><string>Evanescence</string>
+			<key>Album Artist</key><string>Evanescence</string>
+			<key>Album</key><string>Fallen</string>
+			<key>Genre</key><string>Alternative</string>
+			<key>Kind</key><string>Purchased AAC audio file</string>
+			<key>Sort Name</key><string>Tourniquet</string>
+			<key>Sort Album</key><string>Fallen</string>
+			<key>Sort Artist</key><string>Evanescence</string>
+		</dict>
+		<key>167</key>
+		<dict>
+			<key>Track ID</key><integer>167</integer>
+			<key>Size</key><integer>9176454</integer>
+			<key>Total Time</key><integer>257520</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>7</integer>
+			<key>Track Count</key><integer>12</integer>
+			<key>Year</key><integer>2003</integer>
+			<key>Date Modified</key><date>2019-02-13T04:53:29Z</date>
+			<key>Date Added</key><date>2008-04-11T01:55:34Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Release Date</key><date>2003-03-04T12:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>8C96CC1D67B4DCA2</string>
+			<key>Track Type</key><string>Remote</string>
+			<key>Purchased</key><true/>
+			<key>Name</key><string>Imaginary</string>
+			<key>Artist</key><string>Evanescence</string>
+			<key>Album Artist</key><string>Evanescence</string>
+			<key>Album</key><string>Fallen</string>
+			<key>Genre</key><string>Alternative</string>
+			<key>Kind</key><string>Purchased AAC audio file</string>
+			<key>Sort Name</key><string>Imaginary</string>
+			<key>Sort Album</key><string>Fallen</string>
+			<key>Sort Artist</key><string>Evanescence</string>
+		</dict>
+		<key>169</key>
+		<dict>
+			<key>Track ID</key><integer>169</integer>
+			<key>Size</key><integer>539856331</integer>
+			<key>Total Time</key><integer>2604670</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>3</integer>
+			<key>Track Count</key><integer>14</integer>
+			<key>Year</key><integer>2006</integer>
+			<key>Date Modified</key><date>2019-02-13T04:53:29Z</date>
+			<key>Date Added</key><date>2006-02-23T02:51:27Z</date>
+			<key>Play Count</key><integer>1</integer>
+			<key>Release Date</key><date>2006-02-21T08:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Season</key><integer>1</integer>
+			<key>Episode Order</key><integer>3</integer>
+			<key>Persistent ID</key><string>85E9E8AEC7D5C3BE</string>
+			<key>Track Type</key><string>Remote</string>
+			<key>Purchased</key><true/>
+			<key>TV Show</key><true/>
+			<key>Has Video</key><true/>
+			<key>Name</key><string>Conviction (Pilot)</string>
+			<key>Artist</key><string>Conviction</string>
+			<key>Album</key><string>Conviction, Season 1</string>
+			<key>Genre</key><string>Drama</string>
+			<key>Kind</key><string>Purchased MPEG-4 video file</string>
+			<key>Sort Name</key><string>Conviction (Pilot)</string>
+			<key>Sort Album</key><string>Conviction, Season 1</string>
+			<key>Sort Artist</key><string>Conviction</string>
+			<key>Content Rating</key><string>us-tv|TV-14|500|</string>
+			<key>Series</key><string>Conviction</string>
+			<key>Episode</key><string>CAV01</string>
+		</dict>
+		<key>171</key>
+		<dict>
+			<key>Track ID</key><integer>171</integer>
+			<key>Size</key><integer>8297087</integer>
+			<key>Total Time</key><integer>235853</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Track Count</key><integer>1</integer>
+			<key>Year</key><integer>2010</integer>
+			<key>Date Modified</key><date>2019-02-13T04:53:29Z</date>
+			<key>Date Added</key><date>2010-11-27T18:48:20Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Release Date</key><date>2010-11-22T12:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>A14E63F89BCFD578</string>
+			<key>Explicit</key><true/>
+			<key>Track Type</key><string>Remote</string>
+			<key>Purchased</key><true/>
+			<key>Name</key><string>My Only Wish</string>
+			<key>Artist</key><string>Jessica Simpson</string>
+			<key>Album Artist</key><string>Jessica Simpson</string>
+			<key>Album</key><string>My Only Wish - Single</string>
+			<key>Genre</key><string>Pop</string>
+			<key>Kind</key><string>Purchased AAC audio file</string>
+			<key>Sort Name</key><string>My Only Wish</string>
+			<key>Sort Album</key><string>My Only Wish - Single</string>
+			<key>Sort Artist</key><string>Jessica Simpson</string>
+		</dict>
+		<key>173</key>
+		<dict>
+			<key>Track ID</key><integer>173</integer>
+			<key>Size</key><integer>8087801</integer>
+			<key>Total Time</key><integer>229973</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>8</integer>
+			<key>Track Count</key><integer>12</integer>
+			<key>Year</key><integer>2003</integer>
+			<key>Date Modified</key><date>2019-02-13T04:53:29Z</date>
+			<key>Date Added</key><date>2008-04-11T01:55:34Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Release Date</key><date>2003-03-04T12:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>53284800D5D72685</string>
+			<key>Track Type</key><string>Remote</string>
+			<key>Purchased</key><true/>
+			<key>Name</key><string>Taking Over Me</string>
+			<key>Artist</key><string>Evanescence</string>
+			<key>Album Artist</key><string>Evanescence</string>
+			<key>Album</key><string>Fallen</string>
+			<key>Genre</key><string>Alternative</string>
+			<key>Kind</key><string>Purchased AAC audio file</string>
+			<key>Sort Name</key><string>Taking Over Me</string>
+			<key>Sort Album</key><string>Fallen</string>
+			<key>Sort Artist</key><string>Evanescence</string>
+		</dict>
+		<key>175</key>
+		<dict>
+			<key>Track ID</key><integer>175</integer>
+			<key>Size</key><integer>10378068</integer>
+			<key>Total Time</key><integer>320851</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Track Count</key><integer>14</integer>
+			<key>Year</key><integer>2000</integer>
+			<key>Date Modified</key><date>2019-02-13T04:53:29Z</date>
+			<key>Date Added</key><date>2009-03-30T14:35:55Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Release Date</key><date>2000-11-13T12:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>A300A4AB1D0B2653</string>
+			<key>Track Type</key><string>Remote</string>
+			<key>Purchased</key><true/>
+			<key>Name</key><string>One More Time</string>
+			<key>Artist</key><string>Daft Punk</string>
+			<key>Album Artist</key><string>Daft Punk</string>
+			<key>Album</key><string>Discovery</string>
+			<key>Genre</key><string>Electronic</string>
+			<key>Kind</key><string>Purchased AAC audio file</string>
+			<key>Sort Name</key><string>One More Time</string>
+			<key>Sort Album</key><string>Discovery</string>
+			<key>Sort Artist</key><string>Daft Punk</string>
+		</dict>
+		<key>177</key>
+		<dict>
+			<key>Track ID</key><integer>177</integer>
+			<key>Size</key><integer>521144812</integer>
+			<key>Total Time</key><integer>2580757</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Track Count</key><integer>7</integer>
+			<key>Year</key><integer>2007</integer>
+			<key>Date Modified</key><date>2019-02-13T04:53:29Z</date>
+			<key>Date Added</key><date>2007-07-15T17:50:35Z</date>
+			<key>Play Count</key><integer>1</integer>
+			<key>Play Date</key><integer>4294949296</integer>
+			<key>Play Date UTC</key><date>1904-01-01T00:00:00Z</date>
+			<key>Release Date</key><date>2007-06-15T07:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Episode Order</key><integer>1</integer>
+			<key>Persistent ID</key><string>E3F1ECD86D24C6BA</string>
+			<key>Track Type</key><string>Remote</string>
+			<key>Purchased</key><true/>
+			<key>TV Show</key><true/>
+			<key>Has Video</key><true/>
+			<key>Name</key><string>Episode 1</string>
+			<key>Artist</key><string>Jeep World of Adventure Sports</string>
+			<key>Album</key><string>Jeep World of Adventure Sports 2007</string>
+			<key>Genre</key><string>Sports</string>
+			<key>Kind</key><string>Purchased MPEG-4 video file</string>
+			<key>Sort Name</key><string>Episode 1</string>
+			<key>Sort Album</key><string>Jeep World of Adventure Sports 2007</string>
+			<key>Sort Artist</key><string>Jeep World of Adventure Sports</string>
+			<key>Content Rating</key><string>us-tv|TV-14|500|</string>
+			<key>Series</key><string>Jeep World of Adventure Sports</string>
+			<key>Episode</key><string>JWA200701</string>
+		</dict>
+		<key>179</key>
+		<dict>
+			<key>Track ID</key><integer>179</integer>
+			<key>Size</key><integer>8670159</integer>
+			<key>Total Time</key><integer>250960</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>2</integer>
+			<key>Track Number</key><integer>12</integer>
+			<key>Track Count</key><integer>16</integer>
+			<key>Year</key><integer>1987</integer>
+			<key>Date Modified</key><date>2019-02-13T04:53:29Z</date>
+			<key>Date Added</key><date>2009-05-17T17:23:07Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Release Date</key><date>1987-09-07T07:00:00Z</date>
+			<key>Compilation</key><true/>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>45386EF44630C259</string>
+			<key>Track Type</key><string>Remote</string>
+			<key>Purchased</key><true/>
+			<key>Name</key><string>Pump Up the Volume (7" Version)</string>
+			<key>Artist</key><string>M/A/R/R/S</string>
+			<key>Album Artist</key><string>Various Artists</string>
+			<key>Composer</key><string>Martyn Young &#38; Steven Young</string>
+			<key>Album</key><string>Lilliput</string>
+			<key>Genre</key><string>Alternative</string>
+			<key>Kind</key><string>Purchased AAC audio file</string>
+			<key>Sort Name</key><string>Pump Up the Volume (7" Version)</string>
+			<key>Sort Album</key><string>Lilliput</string>
+			<key>Sort Artist</key><string>M/A/R/R/S</string>
+		</dict>
+		<key>181</key>
+		<dict>
+			<key>Track ID</key><integer>181</integer>
+			<key>Size</key><integer>9580020</integer>
+			<key>Total Time</key><integer>264213</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>4</integer>
+			<key>Track Count</key><integer>12</integer>
+			<key>Year</key><integer>2003</integer>
+			<key>Date Modified</key><date>2019-02-13T04:53:29Z</date>
+			<key>Date Added</key><date>2008-04-11T01:55:34Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Release Date</key><date>2003-03-04T12:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>93C562551F9DA259</string>
+			<key>Track Type</key><string>Remote</string>
+			<key>Purchased</key><true/>
+			<key>Name</key><string>My Immortal</string>
+			<key>Artist</key><string>Evanescence</string>
+			<key>Album Artist</key><string>Evanescence</string>
+			<key>Album</key><string>Fallen</string>
+			<key>Genre</key><string>Alternative</string>
+			<key>Kind</key><string>Purchased AAC audio file</string>
+			<key>Sort Name</key><string>My Immortal</string>
+			<key>Sort Album</key><string>Fallen</string>
+			<key>Sort Artist</key><string>Evanescence</string>
+		</dict>
+		<key>183</key>
+		<dict>
+			<key>Track ID</key><integer>183</integer>
+			<key>Size</key><integer>12415476</integer>
+			<key>Total Time</key><integer>376479</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Track Count</key><integer>6</integer>
+			<key>Year</key><integer>2008</integer>
+			<key>Date Modified</key><date>2019-02-13T04:53:29Z</date>
+			<key>Date Added</key><date>2008-06-01T17:40:24Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Release Date</key><date>2008-03-03T12:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>EBD2C5EA949F4619</string>
+			<key>Track Type</key><string>Remote</string>
+			<key>Purchased</key><true/>
+			<key>Name</key><string>Blind</string>
+			<key>Artist</key><string>Hercules &#38; Love Affair</string>
+			<key>Album Artist</key><string>Hercules &#38; Love Affair</string>
+			<key>Album</key><string>Blind</string>
+			<key>Genre</key><string>Dance</string>
+			<key>Kind</key><string>Purchased AAC audio file</string>
+			<key>Sort Name</key><string>Blind</string>
+			<key>Sort Album</key><string>Blind</string>
+			<key>Sort Artist</key><string>Hercules &#38; Love Affair</string>
+		</dict>
+		<key>185</key>
+		<dict>
+			<key>Track ID</key><integer>185</integer>
+			<key>Size</key><integer>8053329</integer>
+			<key>Total Time</key><integer>228307</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>13</integer>
+			<key>Track Count</key><integer>13</integer>
+			<key>Year</key><integer>1991</integer>
+			<key>Date Modified</key><date>2019-02-13T04:53:29Z</date>
+			<key>Date Added</key><date>2009-03-30T14:40:05Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Release Date</key><date>1991-01-01T08:00:00Z</date>
+			<key>Compilation</key><true/>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>B607F31D92B0E6B4</string>
+			<key>Track Type</key><string>Remote</string>
+			<key>Purchased</key><true/>
+			<key>Name</key><string>Tom's Diner (7" A)</string>
+			<key>Artist</key><string>Suzanne Vega &#38; DNA</string>
+			<key>Album Artist</key><string>Various Artists</string>
+			<key>Composer</key><string>Suzanne Vega</string>
+			<key>Album</key><string>Tom's Album</string>
+			<key>Genre</key><string>Rock</string>
+			<key>Kind</key><string>Purchased AAC audio file</string>
+			<key>Sort Name</key><string>Tom's Diner (7" A)</string>
+			<key>Sort Album</key><string>Tom's Album</string>
+			<key>Sort Artist</key><string>Suzanne Vega &#38; DNA</string>
+		</dict>
+		<key>187</key>
+		<dict>
+			<key>Track ID</key><integer>187</integer>
+			<key>Size</key><integer>11124852</integer>
+			<key>Total Time</key><integer>344954</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>11</integer>
+			<key>Track Count</key><integer>14</integer>
+			<key>Year</key><integer>2001</integer>
+			<key>Date Modified</key><date>2019-02-13T04:53:29Z</date>
+			<key>Date Added</key><date>2009-03-30T14:35:55Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Release Date</key><date>2001-02-26T12:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>FDAE020288CBCC57</string>
+			<key>Track Type</key><string>Remote</string>
+			<key>Purchased</key><true/>
+			<key>Name</key><string>Veridis Quo</string>
+			<key>Artist</key><string>Daft Punk</string>
+			<key>Album Artist</key><string>Daft Punk</string>
+			<key>Album</key><string>Discovery</string>
+			<key>Genre</key><string>Electronic</string>
+			<key>Kind</key><string>Purchased AAC audio file</string>
+			<key>Sort Name</key><string>Veridis Quo</string>
+			<key>Sort Album</key><string>Discovery</string>
+			<key>Sort Artist</key><string>Daft Punk</string>
+		</dict>
+		<key>189</key>
+		<dict>
+			<key>Track ID</key><integer>189</integer>
+			<key>Size</key><integer>7318612</integer>
+			<key>Total Time</key><integer>227926</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>10</integer>
+			<key>Track Count</key><integer>14</integer>
+			<key>Year</key><integer>2001</integer>
+			<key>Date Modified</key><date>2019-02-13T04:53:29Z</date>
+			<key>Date Added</key><date>2009-03-30T14:35:55Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Release Date</key><date>2001-02-26T12:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>376AB132D382592B</string>
+			<key>Track Type</key><string>Remote</string>
+			<key>Purchased</key><true/>
+			<key>Name</key><string>Voyager</string>
+			<key>Artist</key><string>Daft Punk</string>
+			<key>Album Artist</key><string>Daft Punk</string>
+			<key>Album</key><string>Discovery</string>
+			<key>Genre</key><string>Electronic</string>
+			<key>Kind</key><string>Purchased AAC audio file</string>
+			<key>Sort Name</key><string>Voyager</string>
+			<key>Sort Album</key><string>Discovery</string>
+			<key>Sort Artist</key><string>Daft Punk</string>
+		</dict>
+		<key>191</key>
+		<dict>
+			<key>Track ID</key><integer>191</integer>
+			<key>Size</key><integer>284277652</integer>
+			<key>Total Time</key><integer>1376417</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Track Count</key><integer>17</integer>
+			<key>Year</key><integer>2007</integer>
+			<key>Date Modified</key><date>2019-02-13T04:53:29Z</date>
+			<key>Date Added</key><date>2007-09-19T12:02:21Z</date>
+			<key>Play Count</key><integer>1</integer>
+			<key>Release Date</key><date>2007-09-24T07:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Season</key><integer>1</integer>
+			<key>Episode Order</key><integer>1</integer>
+			<key>Persistent ID</key><string>BAEEC42817F4E4F9</string>
+			<key>Track Type</key><string>Remote</string>
+			<key>Purchased</key><true/>
+			<key>TV Show</key><true/>
+			<key>Has Video</key><true/>
+			<key>Name</key><string>Pilot</string>
+			<key>Artist</key><string>The Big Bang Theory</string>
+			<key>Album</key><string>The Big Bang Theory, Season 1</string>
+			<key>Genre</key><string>Comedy</string>
+			<key>Kind</key><string>Purchased MPEG-4 video file</string>
+			<key>Sort Name</key><string>Pilot</string>
+			<key>Sort Album</key><string>Big Bang Theory, Season 1</string>
+			<key>Sort Artist</key><string>The Big Bang Theory</string>
+			<key>Sort Series</key><string>Big Bang Theory</string>
+			<key>Content Rating</key><string>us-tv|TV-PG|400|</string>
+			<key>Series</key><string>The Big Bang Theory</string>
+			<key>Episode</key><string>101</string>
+		</dict>
+		<key>193</key>
+		<dict>
+			<key>Track ID</key><integer>193</integer>
+			<key>Size</key><integer>7441412</integer>
+			<key>Total Time</key><integer>231130</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>9</integer>
+			<key>Track Count</key><integer>14</integer>
+			<key>Year</key><integer>2001</integer>
+			<key>Date Modified</key><date>2019-02-13T04:53:29Z</date>
+			<key>Date Added</key><date>2009-03-30T14:35:55Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Release Date</key><date>2001-02-26T12:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>72DD89FF13883D76</string>
+			<key>Track Type</key><string>Remote</string>
+			<key>Purchased</key><true/>
+			<key>Name</key><string>Something About Us</string>
+			<key>Artist</key><string>Daft Punk</string>
+			<key>Album Artist</key><string>Daft Punk</string>
+			<key>Album</key><string>Discovery</string>
+			<key>Genre</key><string>Electronic</string>
+			<key>Kind</key><string>Purchased AAC audio file</string>
+			<key>Sort Name</key><string>Something About Us</string>
+			<key>Sort Album</key><string>Discovery</string>
+			<key>Sort Artist</key><string>Daft Punk</string>
+		</dict>
+		<key>195</key>
+		<dict>
+			<key>Track ID</key><integer>195</integer>
+			<key>Size</key><integer>658939439</integer>
+			<key>Total Time</key><integer>2561227</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>12</integer>
+			<key>Track Count</key><integer>12</integer>
+			<key>Year</key><integer>2007</integer>
+			<key>Date Modified</key><date>2019-02-13T04:53:29Z</date>
+			<key>Date Added</key><date>2008-07-16T15:49:22Z</date>
+			<key>Play Count</key><integer>1</integer>
+			<key>Release Date</key><date>2007-09-20T07:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Season</key><integer>1</integer>
+			<key>Episode Order</key><integer>12</integer>
+			<key>Persistent ID</key><string>0403FFA9E42C888A</string>
+			<key>Track Type</key><string>Remote</string>
+			<key>Purchased</key><true/>
+			<key>TV Show</key><true/>
+			<key>Has Video</key><true/>
+			<key>Name</key><string>Loose Ends, Pt. 2</string>
+			<key>Artist</key><string>Burn Notice</string>
+			<key>Album</key><string>Burn Notice, Season 1</string>
+			<key>Genre</key><string>Drama</string>
+			<key>Kind</key><string>Purchased MPEG-4 video file</string>
+			<key>Sort Name</key><string>Loose Ends, Pt. 2</string>
+			<key>Sort Album</key><string>Burn Notice, Season 1</string>
+			<key>Sort Artist</key><string>Burn Notice</string>
+			<key>Content Rating</key><string>us-tv|TV-PG|400|</string>
+			<key>Series</key><string>Burn Notice</string>
+			<key>Episode</key><string>112</string>
+		</dict>
+		<key>197</key>
+		<dict>
+			<key>Track ID</key><integer>197</integer>
+			<key>Size</key><integer>6451572</integer>
+			<key>Total Time</key><integer>201850</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>8</integer>
+			<key>Track Count</key><integer>14</integer>
+			<key>Year</key><integer>2001</integer>
+			<key>Date Modified</key><date>2019-02-13T04:53:29Z</date>
+			<key>Date Added</key><date>2009-03-30T14:35:55Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Release Date</key><date>2001-02-26T12:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>66B96837501BA9BC</string>
+			<key>Track Type</key><string>Remote</string>
+			<key>Purchased</key><true/>
+			<key>Name</key><string>High Life</string>
+			<key>Artist</key><string>Daft Punk</string>
+			<key>Album Artist</key><string>Daft Punk</string>
+			<key>Album</key><string>Discovery</string>
+			<key>Genre</key><string>Electronic</string>
+			<key>Kind</key><string>Purchased AAC audio file</string>
+			<key>Sort Name</key><string>High Life</string>
+			<key>Sort Album</key><string>Discovery</string>
+			<key>Sort Artist</key><string>Daft Punk</string>
+		</dict>
+		<key>199</key>
+		<dict>
+			<key>Track ID</key><integer>199</integer>
+			<key>Size</key><integer>56990573</integer>
+			<key>Total Time</key><integer>252180</integer>
+			<key>Year</key><integer>2012</integer>
+			<key>Date Modified</key><date>2019-02-13T04:53:29Z</date>
+			<key>Date Added</key><date>2012-12-01T04:56:08Z</date>
+			<key>Release Date</key><date>2012-09-21T07:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>768BAD851D9256B0</string>
+			<key>Track Type</key><string>Remote</string>
+			<key>Purchased</key><true/>
+			<key>Music Video</key><true/>
+			<key>Has Video</key><true/>
+			<key>Name</key><string>Gangnam Style</string>
+			<key>Artist</key><string>PSY</string>
+			<key>Genre</key><string>Pop</string>
+			<key>Kind</key><string>Purchased MPEG-4 video file</string>
+			<key>Sort Name</key><string>Gangnam Style</string>
+			<key>Sort Artist</key><string>PSY</string>
+		</dict>
+		<key>201</key>
+		<dict>
+			<key>Track ID</key><integer>201</integer>
+			<key>Size</key><integer>7677076</integer>
+			<key>Total Time</key><integer>237865</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>7</integer>
+			<key>Track Count</key><integer>14</integer>
+			<key>Year</key><integer>2001</integer>
+			<key>Date Modified</key><date>2019-02-13T04:53:29Z</date>
+			<key>Date Added</key><date>2009-03-30T14:35:55Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Release Date</key><date>2001-02-26T12:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>8CB8400B4140B8C3</string>
+			<key>Track Type</key><string>Remote</string>
+			<key>Purchased</key><true/>
+			<key>Name</key><string>Superheroes</string>
+			<key>Artist</key><string>Daft Punk</string>
+			<key>Album Artist</key><string>Daft Punk</string>
+			<key>Album</key><string>Discovery</string>
+			<key>Genre</key><string>Electronic</string>
+			<key>Kind</key><string>Purchased AAC audio file</string>
+			<key>Sort Name</key><string>Superheroes</string>
+			<key>Sort Album</key><string>Discovery</string>
+			<key>Sort Artist</key><string>Daft Punk</string>
+		</dict>
+		<key>203</key>
+		<dict>
+			<key>Track ID</key><integer>203</integer>
+			<key>Size</key><integer>3353476</integer>
+			<key>Total Time</key><integer>104535</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>6</integer>
+			<key>Track Count</key><integer>14</integer>
+			<key>Year</key><integer>2001</integer>
+			<key>Date Modified</key><date>2019-02-13T04:53:29Z</date>
+			<key>Date Added</key><date>2009-03-30T14:35:55Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Release Date</key><date>2001-02-26T12:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>6F8121C9BF59A814</string>
+			<key>Track Type</key><string>Remote</string>
+			<key>Purchased</key><true/>
+			<key>Name</key><string>Nightvision</string>
+			<key>Artist</key><string>Daft Punk</string>
+			<key>Album Artist</key><string>Daft Punk</string>
+			<key>Album</key><string>Discovery</string>
+			<key>Genre</key><string>Electronic</string>
+			<key>Kind</key><string>Purchased AAC audio file</string>
+			<key>Sort Name</key><string>Nightvision</string>
+			<key>Sort Album</key><string>Discovery</string>
+			<key>Sort Artist</key><string>Daft Punk</string>
+		</dict>
+		<key>205</key>
+		<dict>
+			<key>Track ID</key><integer>205</integer>
+			<key>Size</key><integer>41387228</integer>
+			<key>Total Time</key><integer>179230</integer>
+			<key>Year</key><integer>2006</integer>
+			<key>Date Modified</key><date>2019-02-13T04:53:29Z</date>
+			<key>Date Added</key><date>2009-04-03T17:05:11Z</date>
+			<key>Release Date</key><date>2006-03-13T08:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>0D5B03316314DB75</string>
+			<key>Track Type</key><string>Remote</string>
+			<key>Purchased</key><true/>
+			<key>Music Video</key><true/>
+			<key>Has Video</key><true/>
+			<key>Name</key><string>Crazy</string>
+			<key>Artist</key><string>Gnarls Barkley</string>
+			<key>Genre</key><string>Alternative</string>
+			<key>Kind</key><string>Purchased MPEG-4 video file</string>
+			<key>Sort Name</key><string>Crazy</string>
+			<key>Sort Artist</key><string>Gnarls Barkley</string>
+		</dict>
+		<key>207</key>
+		<dict>
+			<key>Track ID</key><integer>207</integer>
+			<key>Size</key><integer>9518934</integer>
+			<key>Total Time</key><integer>272291</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Track Count</key><integer>1</integer>
+			<key>Year</key><integer>2009</integer>
+			<key>Date Modified</key><date>2019-02-13T04:53:29Z</date>
+			<key>Date Added</key><date>2009-07-26T23:53:09Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Release Date</key><date>2009-07-14T12:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>A96F04936998A669</string>
+			<key>Track Type</key><string>Remote</string>
+			<key>Purchased</key><true/>
+			<key>Name</key><string>United Breaks Guitars</string>
+			<key>Artist</key><string>Dave Carroll</string>
+			<key>Album Artist</key><string>Dave Carroll</string>
+			<key>Album</key><string>United Breaks Guitars - Single</string>
+			<key>Genre</key><string>Country</string>
+			<key>Kind</key><string>Purchased AAC audio file</string>
+			<key>Sort Name</key><string>United Breaks Guitars</string>
+			<key>Sort Album</key><string>United Breaks Guitars - Single</string>
+			<key>Sort Artist</key><string>Dave Carroll</string>
+		</dict>
+		<key>209</key>
+		<dict>
+			<key>Track ID</key><integer>209</integer>
+			<key>Size</key><integer>6753684</integer>
+			<key>Total Time</key><integer>211695</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>5</integer>
+			<key>Track Count</key><integer>14</integer>
+			<key>Year</key><integer>2001</integer>
+			<key>Date Modified</key><date>2019-02-13T04:53:29Z</date>
+			<key>Date Added</key><date>2009-03-30T14:35:55Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Release Date</key><date>2001-02-26T12:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>7F76C0F646F0A545</string>
+			<key>Track Type</key><string>Remote</string>
+			<key>Purchased</key><true/>
+			<key>Name</key><string>Crescendolls</string>
+			<key>Artist</key><string>Daft Punk</string>
+			<key>Album Artist</key><string>Daft Punk</string>
+			<key>Album</key><string>Discovery</string>
+			<key>Genre</key><string>Electronic</string>
+			<key>Kind</key><string>Purchased AAC audio file</string>
+			<key>Sort Name</key><string>Crescendolls</string>
+			<key>Sort Album</key><string>Discovery</string>
+			<key>Sort Artist</key><string>Daft Punk</string>
+		</dict>
+		<key>211</key>
+		<dict>
+			<key>Track ID</key><integer>211</integer>
+			<key>Size</key><integer>11513849</integer>
+			<key>Total Time</key><integer>330027</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>11</integer>
+			<key>Track Count</key><integer>12</integer>
+			<key>Year</key><integer>2003</integer>
+			<key>Date Modified</key><date>2019-02-13T04:53:29Z</date>
+			<key>Date Added</key><date>2008-04-11T01:55:34Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Release Date</key><date>2003-03-04T12:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>220CB1637FCE00A4</string>
+			<key>Track Type</key><string>Remote</string>
+			<key>Purchased</key><true/>
+			<key>Name</key><string>Whisper</string>
+			<key>Artist</key><string>Evanescence</string>
+			<key>Album Artist</key><string>Evanescence</string>
+			<key>Album</key><string>Fallen</string>
+			<key>Genre</key><string>Alternative</string>
+			<key>Kind</key><string>Purchased AAC audio file</string>
+			<key>Sort Name</key><string>Whisper</string>
+			<key>Sort Album</key><string>Fallen</string>
+			<key>Sort Artist</key><string>Evanescence</string>
+		</dict>
+		<key>213</key>
+		<dict>
+			<key>Track ID</key><integer>213</integer>
+			<key>Size</key><integer>11692443</integer>
+			<key>Total Time</key><integer>303200</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Track Count</key><integer>9</integer>
+			<key>Year</key><integer>1973</integer>
+			<key>Date Modified</key><date>2019-02-13T04:53:29Z</date>
+			<key>Date Added</key><date>2009-06-27T03:08:18Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Release Date</key><date>1973-01-05T08:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>75BABB2F5A9DD5ED</string>
+			<key>Track Type</key><string>Remote</string>
+			<key>Purchased</key><true/>
+			<key>Name</key><string>Blinded By the Light</string>
+			<key>Artist</key><string>Bruce Springsteen</string>
+			<key>Album Artist</key><string>Bruce Springsteen</string>
+			<key>Album</key><string>Greetings from Asbury Park, N.J.</string>
+			<key>Genre</key><string>Rock</string>
+			<key>Kind</key><string>Purchased AAC audio file</string>
+			<key>Sort Name</key><string>Blinded By the Light</string>
+			<key>Sort Album</key><string>Greetings from Asbury Park, N.J.</string>
+			<key>Sort Artist</key><string>Bruce Springsteen</string>
+		</dict>
+		<key>215</key>
+		<dict>
+			<key>Track ID</key><integer>215</integer>
+			<key>Size</key><integer>7250164</integer>
+			<key>Total Time</key><integer>224350</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>4</integer>
+			<key>Track Count</key><integer>14</integer>
+			<key>Year</key><integer>2001</integer>
+			<key>Date Modified</key><date>2019-02-13T04:53:29Z</date>
+			<key>Date Added</key><date>2009-03-30T14:35:55Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Release Date</key><date>2001-02-26T12:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>221E897AA9FF92B3</string>
+			<key>Track Type</key><string>Remote</string>
+			<key>Purchased</key><true/>
+			<key>Name</key><string>Harder, Better, Faster, Stronger</string>
+			<key>Artist</key><string>Daft Punk</string>
+			<key>Album Artist</key><string>Daft Punk</string>
+			<key>Album</key><string>Discovery</string>
+			<key>Genre</key><string>Electronic</string>
+			<key>Kind</key><string>Purchased AAC audio file</string>
+			<key>Sort Name</key><string>Harder, Better, Faster, Stronger</string>
+			<key>Sort Album</key><string>Discovery</string>
+			<key>Sort Artist</key><string>Daft Punk</string>
+		</dict>
+		<key>217</key>
+		<dict>
+			<key>Track ID</key><integer>217</integer>
+			<key>Size</key><integer>7983365</integer>
+			<key>Total Time</key><integer>214947</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Track Count</key><integer>12</integer>
+			<key>Year</key><integer>2003</integer>
+			<key>Date Modified</key><date>2019-02-13T04:53:29Z</date>
+			<key>Date Added</key><date>2008-04-11T01:55:34Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Release Date</key><date>2003-03-04T12:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>032F315934465CBC</string>
+			<key>Track Type</key><string>Remote</string>
+			<key>Purchased</key><true/>
+			<key>Name</key><string>Going Under</string>
+			<key>Artist</key><string>Evanescence</string>
+			<key>Album Artist</key><string>Evanescence</string>
+			<key>Album</key><string>Fallen</string>
+			<key>Genre</key><string>Alternative</string>
+			<key>Kind</key><string>Purchased AAC audio file</string>
+			<key>Sort Name</key><string>Going Under</string>
+			<key>Sort Album</key><string>Fallen</string>
+			<key>Sort Artist</key><string>Evanescence</string>
+		</dict>
+		<key>219</key>
+		<dict>
+			<key>Track ID</key><integer>219</integer>
+			<key>Size</key><integer>9816865</integer>
+			<key>Total Time</key><integer>273360</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>12</integer>
+			<key>Track Count</key><integer>12</integer>
+			<key>Year</key><integer>2003</integer>
+			<key>Date Modified</key><date>2019-02-13T04:53:29Z</date>
+			<key>Date Added</key><date>2008-04-11T01:55:34Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Release Date</key><date>2003-03-04T12:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>AC768BC08DBBD885</string>
+			<key>Track Type</key><string>Remote</string>
+			<key>Purchased</key><true/>
+			<key>Name</key><string>My Immortal (Band Version)</string>
+			<key>Artist</key><string>Evanescence</string>
+			<key>Album Artist</key><string>Evanescence</string>
+			<key>Album</key><string>Fallen</string>
+			<key>Genre</key><string>Alternative</string>
+			<key>Kind</key><string>Purchased AAC audio file</string>
+			<key>Sort Name</key><string>My Immortal (Band Version)</string>
+			<key>Sort Album</key><string>Fallen</string>
+			<key>Sort Artist</key><string>Evanescence</string>
+		</dict>
+		<key>221</key>
+		<dict>
+			<key>Track ID</key><integer>221</integer>
+			<key>Size</key><integer>787219473</integer>
+			<key>Total Time</key><integer>3079953</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Track Count</key><integer>22</integer>
+			<key>Year</key><integer>2007</integer>
+			<key>Date Modified</key><date>2019-02-13T04:53:29Z</date>
+			<key>Date Added</key><date>2008-03-23T00:45:58Z</date>
+			<key>Play Count</key><integer>1</integer>
+			<key>Play Date</key><integer>4294949296</integer>
+			<key>Play Date UTC</key><date>1904-01-01T00:00:00Z</date>
+			<key>Release Date</key><date>2007-07-09T07:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Season</key><integer>1</integer>
+			<key>Episode Order</key><integer>1</integer>
+			<key>Persistent ID</key><string>E9B3F10BD1194F14</string>
+			<key>Track Type</key><string>Remote</string>
+			<key>Purchased</key><true/>
+			<key>TV Show</key><true/>
+			<key>Has Video</key><true/>
+			<key>Name</key><string>Pilot</string>
+			<key>Artist</key><string>Greek</string>
+			<key>Album</key><string>Greek, Season 1</string>
+			<key>Genre</key><string>Drama</string>
+			<key>Kind</key><string>Purchased MPEG-4 video file</string>
+			<key>Sort Name</key><string>Pilot</string>
+			<key>Sort Album</key><string>Greek, Season 1</string>
+			<key>Sort Artist</key><string>Greek</string>
+			<key>Content Rating</key><string>us-tv|TV-14|500|language and dialogue</string>
+			<key>Series</key><string>Greek</string>
+			<key>Episode</key><string>1001</string>
+		</dict>
+		<key>223</key>
+		<dict>
+			<key>Track ID</key><integer>223</integer>
+			<key>Size</key><integer>8688629</integer>
+			<key>Total Time</key><integer>237293</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>2</integer>
+			<key>Track Count</key><integer>12</integer>
+			<key>Year</key><integer>2003</integer>
+			<key>Date Modified</key><date>2019-02-13T04:53:29Z</date>
+			<key>Date Added</key><date>2008-04-11T01:55:34Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Release Date</key><date>2003-03-04T12:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>62C6F2BE1757716C</string>
+			<key>Track Type</key><string>Remote</string>
+			<key>Purchased</key><true/>
+			<key>Name</key><string>Bring Me to Life</string>
+			<key>Artist</key><string>Evanescence</string>
+			<key>Album Artist</key><string>Evanescence</string>
+			<key>Album</key><string>Fallen</string>
+			<key>Genre</key><string>Alternative</string>
+			<key>Kind</key><string>Purchased AAC audio file</string>
+			<key>Sort Name</key><string>Bring Me to Life</string>
+			<key>Sort Album</key><string>Fallen</string>
+			<key>Sort Artist</key><string>Evanescence</string>
+		</dict>
+		<key>225</key>
+		<dict>
+			<key>Track ID</key><integer>225</integer>
+			<key>Size</key><integer>27296471</integer>
+			<key>Total Time</key><integer>119487</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>2</integer>
+			<key>Track Count</key><integer>2</integer>
+			<key>Year</key><integer>2007</integer>
+			<key>Date Modified</key><date>2019-02-13T04:53:29Z</date>
+			<key>Date Added</key><date>2007-08-30T01:11:32Z</date>
+			<key>Release Date</key><date>2007-08-28T07:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>672D488A6A503742</string>
+			<key>Track Type</key><string>Remote</string>
+			<key>Purchased</key><true/>
+			<key>Music Video</key><true/>
+			<key>Has Video</key><true/>
+			<key>Name</key><string>Nod Your Head</string>
+			<key>Artist</key><string>Paul McCartney</string>
+			<key>Album Artist</key><string>Paul McCartney</string>
+			<key>Album</key><string>Nod Your Head - Single</string>
+			<key>Genre</key><string>Rock</string>
+			<key>Kind</key><string>Purchased MPEG-4 video file</string>
+			<key>Sort Name</key><string>Nod Your Head</string>
+			<key>Sort Album</key><string>Nod Your Head - Single</string>
+			<key>Sort Artist</key><string>Paul McCartney</string>
+		</dict>
+		<key>227</key>
+		<dict>
+			<key>Track ID</key><integer>227</integer>
+			<key>Size</key><integer>652367506</integer>
+			<key>Total Time</key><integer>2635343</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>10</integer>
+			<key>Track Count</key><integer>22</integer>
+			<key>Year</key><integer>2007</integer>
+			<key>Date Modified</key><date>2019-02-13T04:53:29Z</date>
+			<key>Date Added</key><date>2008-03-23T00:46:01Z</date>
+			<key>Play Count</key><integer>1</integer>
+			<key>Play Date</key><integer>4294949296</integer>
+			<key>Play Date UTC</key><date>1904-01-01T00:00:00Z</date>
+			<key>Release Date</key><date>2007-09-10T07:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Season</key><integer>1</integer>
+			<key>Episode Order</key><integer>10</integer>
+			<key>Persistent ID</key><string>86F4CDB722A4A499</string>
+			<key>Track Type</key><string>Remote</string>
+			<key>Purchased</key><true/>
+			<key>TV Show</key><true/>
+			<key>Has Video</key><true/>
+			<key>Name</key><string>Black, White and Read All Over</string>
+			<key>Artist</key><string>Greek</string>
+			<key>Album</key><string>Greek, Season 1</string>
+			<key>Genre</key><string>Drama</string>
+			<key>Kind</key><string>Purchased MPEG-4 video file</string>
+			<key>Sort Name</key><string>Black, White and Read All Over</string>
+			<key>Sort Album</key><string>Greek, Season 1</string>
+			<key>Sort Artist</key><string>Greek</string>
+			<key>Content Rating</key><string>us-tv|TV-PG|400|dialogue</string>
+			<key>Series</key><string>Greek</string>
+			<key>Episode</key><string>1010</string>
+		</dict>
+		<key>229</key>
+		<dict>
+			<key>Track ID</key><integer>229</integer>
+			<key>Size</key><integer>35529433</integer>
+			<key>Total Time</key><integer>156323</integer>
+			<key>Year</key><integer>2008</integer>
+			<key>Date Modified</key><date>2019-02-13T04:53:29Z</date>
+			<key>Date Added</key><date>2008-11-01T18:43:15Z</date>
+			<key>Release Date</key><date>2008-09-24T07:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>86AA984A30C22CD8</string>
+			<key>Track Type</key><string>Remote</string>
+			<key>Purchased</key><true/>
+			<key>Music Video</key><true/>
+			<key>Has Video</key><true/>
+			<key>Name</key><string>Little Toy Gun</string>
+			<key>Artist</key><string>honeyhoney</string>
+			<key>Genre</key><string>Alternative</string>
+			<key>Kind</key><string>Purchased MPEG-4 video file</string>
+			<key>Sort Name</key><string>Little Toy Gun</string>
+			<key>Sort Artist</key><string>honeyhoney</string>
+		</dict>
+		<key>231</key>
+		<dict>
+			<key>Track ID</key><integer>231</integer>
+			<key>Size</key><integer>8828141</integer>
+			<key>Total Time</key><integer>247333</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>10</integer>
+			<key>Track Count</key><integer>12</integer>
+			<key>Year</key><integer>2003</integer>
+			<key>Date Modified</key><date>2019-02-13T04:53:29Z</date>
+			<key>Date Added</key><date>2008-04-11T01:55:34Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Release Date</key><date>2003-03-04T12:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>237B1BAF138F948C</string>
+			<key>Track Type</key><string>Remote</string>
+			<key>Purchased</key><true/>
+			<key>Name</key><string>My Last Breath</string>
+			<key>Artist</key><string>Evanescence</string>
+			<key>Album Artist</key><string>Evanescence</string>
+			<key>Album</key><string>Fallen</string>
+			<key>Genre</key><string>Alternative</string>
+			<key>Kind</key><string>Purchased AAC audio file</string>
+			<key>Sort Name</key><string>My Last Breath</string>
+			<key>Sort Album</key><string>Fallen</string>
+			<key>Sort Artist</key><string>Evanescence</string>
+		</dict>
+		<key>233</key>
+		<dict>
+			<key>Track ID</key><integer>233</integer>
+			<key>Size</key><integer>7803202</integer>
+			<key>Total Time</key><integer>220360</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>9</integer>
+			<key>Track Count</key><integer>12</integer>
+			<key>Year</key><integer>2003</integer>
+			<key>Date Modified</key><date>2019-02-13T04:53:29Z</date>
+			<key>Date Added</key><date>2008-04-11T01:55:34Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Release Date</key><date>2003-03-04T12:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>F0E43D920BC4AC42</string>
+			<key>Track Type</key><string>Remote</string>
+			<key>Purchased</key><true/>
+			<key>Name</key><string>Hello</string>
+			<key>Artist</key><string>Evanescence</string>
+			<key>Album Artist</key><string>Evanescence</string>
+			<key>Album</key><string>Fallen</string>
+			<key>Genre</key><string>Alternative</string>
+			<key>Kind</key><string>Purchased AAC audio file</string>
+			<key>Sort Name</key><string>Hello</string>
+			<key>Sort Album</key><string>Fallen</string>
+			<key>Sort Artist</key><string>Evanescence</string>
+		</dict>
+		<key>235</key>
+		<dict>
+			<key>Track ID</key><integer>235</integer>
+			<key>Size</key><integer>8351074</integer>
+			<key>Total Time</key><integer>238378</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>3</integer>
+			<key>Track Count</key><integer>4</integer>
+			<key>Year</key><integer>2009</integer>
+			<key>Date Modified</key><date>2019-02-13T04:53:29Z</date>
+			<key>Date Added</key><date>2009-11-02T16:46:25Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Release Date</key><date>2009-10-30T07:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>581077BF2AFD76C5</string>
+			<key>Track Type</key><string>Remote</string>
+			<key>Purchased</key><true/>
+			<key>Name</key><string>Forgotten</string>
+			<key>Artist</key><string>Gatekeeper</string>
+			<key>Album Artist</key><string>Gatekeeper</string>
+			<key>Composer</key><string>Aaron David Ross &#38; Matthew Arkell</string>
+			<key>Album</key><string>Optimus Maximus - EP</string>
+			<key>Genre</key><string>Electronic</string>
+			<key>Kind</key><string>Purchased AAC audio file</string>
+			<key>Sort Name</key><string>Forgotten</string>
+			<key>Sort Album</key><string>Optimus Maximus - EP</string>
+			<key>Sort Artist</key><string>Gatekeeper</string>
+		</dict>
+		<key>237</key>
+		<dict>
+			<key>Track ID</key><integer>237</integer>
+			<key>Size</key><integer>5419631</integer>
+			<key>Total Time</key><integer>141533</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>5</integer>
+			<key>Track Count</key><integer>10</integer>
+			<key>Year</key><integer>2007</integer>
+			<key>Date Modified</key><date>2019-02-13T04:53:29Z</date>
+			<key>Date Added</key><date>2008-04-11T02:25:52Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Release Date</key><date>2007-11-06T08:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>116C9A8531D3A7CB</string>
+			<key>Track Type</key><string>Remote</string>
+			<key>Purchased</key><true/>
+			<key>Name</key><string>Time On Your Side</string>
+			<key>Artist</key><string>Emily Jane White</string>
+			<key>Album Artist</key><string>Emily Jane White</string>
+			<key>Album</key><string>Dark Undercoat</string>
+			<key>Genre</key><string>Singer/Songwriter</string>
+			<key>Kind</key><string>Purchased AAC audio file</string>
+			<key>Sort Name</key><string>Time On Your Side</string>
+			<key>Sort Album</key><string>Dark Undercoat</string>
+			<key>Sort Artist</key><string>Emily Jane White</string>
+		</dict>
+		<key>239</key>
+		<dict>
+			<key>Track ID</key><integer>239</integer>
+			<key>Size</key><integer>9034802</integer>
+			<key>Total Time</key><integer>263198</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>4</integer>
+			<key>Track Count</key><integer>14</integer>
+			<key>Year</key><integer>2007</integer>
+			<key>Date Modified</key><date>2019-02-13T04:53:29Z</date>
+			<key>Date Added</key><date>2007-08-20T01:13:26Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Release Date</key><date>2007-07-17T07:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>DBD22BEEC79BADE1</string>
+			<key>Track Type</key><string>Remote</string>
+			<key>Purchased</key><true/>
+			<key>Name</key><string>You Picked Me</string>
+			<key>Artist</key><string>A Fine Frenzy</string>
+			<key>Album Artist</key><string>A Fine Frenzy</string>
+			<key>Album</key><string>One Cell In the Sea</string>
+			<key>Genre</key><string>Pop</string>
+			<key>Kind</key><string>Purchased AAC audio file</string>
+			<key>Sort Name</key><string>You Picked Me</string>
+			<key>Sort Album</key><string>One Cell In the Sea</string>
+			<key>Sort Artist</key><string>Fine Frenzy</string>
+			<key>Sort Album Artist</key><string>Fine Frenzy</string>
+		</dict>
+		<key>241</key>
+		<dict>
+			<key>Track ID</key><integer>241</integer>
+			<key>Size</key><integer>535507491</integer>
+			<key>Total Time</key><integer>2634632</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Track Count</key><integer>10</integer>
+			<key>Year</key><integer>2007</integer>
+			<key>Date Modified</key><date>2019-02-13T04:53:29Z</date>
+			<key>Date Added</key><date>2007-09-27T00:59:20Z</date>
+			<key>Play Count</key><integer>1</integer>
+			<key>Play Date</key><integer>4294949296</integer>
+			<key>Play Date UTC</key><date>1904-01-01T00:00:00Z</date>
+			<key>Release Date</key><date>2007-09-17T07:00:00Z</date>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Season</key><integer>1</integer>
+			<key>Episode Order</key><integer>1</integer>
+			<key>Persistent ID</key><string>5ADD9DC3E6CF9AE0</string>
+			<key>Track Type</key><string>Remote</string>
+			<key>Purchased</key><true/>
+			<key>TV Show</key><true/>
+			<key>Has Video</key><true/>
+			<key>Name</key><string>Pilot</string>
+			<key>Artist</key><string>K-Ville</string>
+			<key>Album</key><string>K-Ville, Season 1</string>
+			<key>Genre</key><string>Drama</string>
+			<key>Kind</key><string>Purchased MPEG-4 video file</string>
+			<key>Sort Name</key><string>Pilot</string>
+			<key>Sort Album</key><string>K-Ville, Season 1</string>
+			<key>Sort Artist</key><string>K-Ville</string>
+			<key>Content Rating</key><string>us-tv|TV-14|500|</string>
+			<key>Series</key><string>K-Ville</string>
+			<key>Episode</key><string>101</string>
+		</dict>
+		<key>243</key>
+		<dict>
+			<key>Track ID</key><integer>243</integer>
+			<key>Size</key><integer>41209</integer>
+			<key>Total Time</key><integer>5328</integer>
+			<key>Year</key><integer>1997</integer>
+			<key>Date Modified</key><date>2019-11-02T20:44:32Z</date>
+			<key>Date Added</key><date>2019-10-31T04:49:09Z</date>
+			<key>Bit Rate</key><integer>56</integer>
+			<key>Sample Rate</key><integer>22050</integer>
+			<key>Play Count</key><integer>5</integer>
+			<key>Play Date</key><integer>3655557873</integer>
+			<key>Play Date UTC</key><date>2019-11-02T20:44:33Z</date>
+			<key>Persistent ID</key><string>E260ED69DDF89F70</string>
+			<key>Track Type</key><string>File</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+			<key>Name</key><string>Llama Whippin' Intro</string>
+			<key>Artist</key><string>DJ Mike Llama</string>
+			<key>Album Artist</key><string>DJ Mike Llama</string>
+			<key>Composer</key><string>Justin Frankel</string>
+			<key>Album</key><string>WinAmp Software</string>
+			<key>Genre</key><string>Unclassifiable</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Location</key><string>file:///Users/gvollink/Music/iTunes/iTunes%20Media/Music/DJ%20Mike%20Llama/WinAmp%20Software/Llama%20Whippin'%20Intro.mp3</string>
+		</dict>
+	</dict>
+	<key>Playlists</key>
+	<array>
+		<dict>
+			<key>Master</key><true/>
+			<key>Playlist ID</key><integer>245</integer>
+			<key>Playlist Persistent ID</key><string>EDBDA15993EC0AB5</string>
+			<key>All Items</key><true/>
+			<key>Visible</key><false/>
+			<key>Name</key><string>Library</string>
+			<key>Playlist Items</key>
+			<array>
+				<dict>
+					<key>Track ID</key><integer>131</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>133</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>135</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>137</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>139</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>141</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>143</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>145</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>147</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>149</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>151</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>153</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>155</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>157</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>159</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>161</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>163</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>165</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>167</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>169</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>171</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>173</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>175</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>177</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>179</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>181</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>183</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>185</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>187</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>189</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>191</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>193</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>195</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>197</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>199</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>201</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>203</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>205</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>207</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>209</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>211</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>213</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>215</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>217</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>219</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>221</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>223</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>225</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>227</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>229</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>231</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>233</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>235</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>237</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>239</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>241</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>243</integer>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>Playlist ID</key><integer>305</integer>
+			<key>Playlist Persistent ID</key><string>DCF3757CD5792CD7</string>
+			<key>Distinguished Kind</key><integer>65</integer>
+			<key>All Items</key><true/>
+			<key>Name</key><string>Downloaded</string>
+			<key>Smart Info</key>
+			<data>
+			AQEAAwAAAAIAAAAZAAAAAAAAAAcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAA==
+			</data>
+			<key>Smart Criteria</key>
+			<data>
+			U0xzdAABAAEAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwAAAQAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEAAAAAAAQIbEAAAAAAAAAAAAAAAAAAAAB
+			AAAAAAAQIbEAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8AgAEAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARAAAAAAAIIAE
+			AAAAAAAAAAAAAAAAAAAAAQAAAAAAIIAEAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAhQAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAEQAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAQAAAAAAAAAAAAAAAAAA
+			AAEAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+			</data>
+			<key>Playlist Items</key>
+			<array>
+				<dict>
+					<key>Track ID</key><integer>243</integer>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>Playlist ID</key><integer>309</integer>
+			<key>Playlist Persistent ID</key><string>F9B26FEF7D4F5657</string>
+			<key>Distinguished Kind</key><integer>4</integer>
+			<key>Music</key><true/>
+			<key>All Items</key><true/>
+			<key>Name</key><string>Music</string>
+			<key>Smart Info</key>
+			<data>
+			AQEAAwAAAAIAAAAZAAAAAAAAAAcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAA==
+			</data>
+			<key>Smart Criteria</key>
+			<data>
+			U0xzdAABAAEAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwAAAQAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEAAAAAAAQIbEAAAAAAAAAAAAAAAAAAAAB
+			AAAAAAAQIbEAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8AgAEAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARAAAAAAAIIAE
+			AAAAAAAAAAAAAAAAAAAAAQAAAAAAIIAEAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA
+			AAAAAAAA
+			</data>
+			<key>Playlist Items</key>
+			<array>
+				<dict>
+					<key>Track ID</key><integer>213</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>175</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>215</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>209</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>203</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>201</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>197</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>193</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>189</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>187</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>151</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>149</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>147</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>207</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>139</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>237</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>159</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>217</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>223</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>133</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>181</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>163</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>165</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>167</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>173</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>233</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>231</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>211</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>219</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>239</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>235</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>205</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>183</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>229</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>171</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>131</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>179</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>161</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>225</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>199</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>155</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>185</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>243</integer>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>Playlist ID</key><integer>370</integer>
+			<key>Playlist Persistent ID</key><string>1C90CF920D438EB5</string>
+			<key>Distinguished Kind</key><integer>66</integer>
+			<key>All Items</key><true/>
+			<key>Name</key><string>Downloaded</string>
+			<key>Smart Info</key>
+			<data>
+			AQEAAwAAAAIAAAAZAAAAAAAAAAcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAA==
+			</data>
+			<key>Smart Criteria</key>
+			<data>
+			U0xzdAABAAEAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwAAAQAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAB
+			AAAAAAAAAAIAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8AgAEAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARAAAAAAAIKAE
+			AAAAAAAAAAAAAAAAAAAAAQAAAAAAIKAEAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAhQAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAEQAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAQAAAAAAAAAAAAAAAAAA
+			AAEAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+			</data>
+		</dict>
+		<dict>
+			<key>Playlist ID</key><integer>373</integer>
+			<key>Playlist Persistent ID</key><string>2AAFBDCEF1BB5BA3</string>
+			<key>Distinguished Kind</key><integer>2</integer>
+			<key>Movies</key><true/>
+			<key>All Items</key><true/>
+			<key>Name</key><string>Movies</string>
+			<key>Smart Info</key>
+			<data>
+			AQEAAwAAAAIAAAAZAAAAAAAAAAcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAA==
+			</data>
+			<key>Smart Criteria</key>
+			<data>
+			U0xzdAABAAEAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwAAAQAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAB
+			AAAAAAAAAAIAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8AgAEAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARAAAAAAAIKAE
+			AAAAAAAAAAAAAAAAAAAAAQAAAAAAIKAEAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA
+			AAAAAAAA
+			</data>
+			<key>Playlist Items</key>
+			<array>
+				<dict>
+					<key>Track ID</key><integer>137</integer>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>Playlist ID</key><integer>380</integer>
+			<key>Playlist Persistent ID</key><string>648A765BCD27F3DF</string>
+			<key>Distinguished Kind</key><integer>67</integer>
+			<key>All Items</key><true/>
+			<key>Name</key><string>Downloaded</string>
+			<key>Smart Info</key>
+			<data>
+			AQEAAwAAAAIAAAAZAAAAAAAAAAcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAA==
+			</data>
+			<key>Smart Criteria</key>
+			<data>
+			U0xzdAABAAEAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwAAAQAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAB
+			AAAAAAAAAEAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8AgAEAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARAAAAAAAIKAE
+			AAAAAAAAAAAAAAAAAAAAAQAAAAAAIKAEAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAhQAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAEQAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAQAAAAAAAAAAAAAAAAAA
+			AAEAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+			</data>
+		</dict>
+		<dict>
+			<key>Playlist ID</key><integer>383</integer>
+			<key>Playlist Persistent ID</key><string>197E47E0321FCAA3</string>
+			<key>Distinguished Kind</key><integer>3</integer>
+			<key>TV Shows</key><true/>
+			<key>All Items</key><true/>
+			<key>Name</key><string>TV Shows</string>
+			<key>Smart Info</key>
+			<data>
+			AQEAAwAAAAIAAAAZAAAAAAAAAAcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAA==
+			</data>
+			<key>Smart Criteria</key>
+			<data>
+			U0xzdAABAAEAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwAAAQAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAB
+			AAAAAAAAAEAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8AgAEAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARAAAAAAAIKAE
+			AAAAAAAAAAAAAAAAAAAAAQAAAAAAIKAEAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA
+			AAAAAAAA
+			</data>
+			<key>Playlist Items</key>
+			<array>
+				<dict>
+					<key>Track ID</key><integer>145</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>143</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>141</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>153</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>135</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>157</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>195</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>169</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>221</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>227</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>177</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>241</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>191</integer>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>Playlist ID</key><integer>399</integer>
+			<key>Playlist Persistent ID</key><string>E1C167DFA01451F8</string>
+			<key>Distinguished Kind</key><integer>10</integer>
+			<key>Podcasts</key><true/>
+			<key>All Items</key><true/>
+			<key>Name</key><string>Podcasts</string>
+		</dict>
+		<dict>
+			<key>Playlist ID</key><integer>406</integer>
+			<key>Playlist Persistent ID</key><string>C69A63FA791DCBBF</string>
+			<key>Distinguished Kind</key><integer>5</integer>
+			<key>Audiobooks</key><true/>
+			<key>All Items</key><true/>
+			<key>Name</key><string>Audiobooks</string>
+			<key>Smart Info</key>
+			<data>
+			AQEAAwAAAAIAAAAZAAAAAAAAAAcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAA==
+			</data>
+			<key>Smart Criteria</key>
+			<data>
+			U0xzdAABAAEAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwAAAQAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAB
+			AAAAAAAAAAgAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8AgAEAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARAAAAAAAIKAE
+			AAAAAAAAAAAAAAAAAAAAAQAAAAAAIKAEAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA
+			AAAAAAAA
+			</data>
+		</dict>
+		<dict>
+			<key>Playlist ID</key><integer>412</integer>
+			<key>Playlist Persistent ID</key><string>C0DF5B0A63A075A1</string>
+			<key>All Items</key><true/>
+			<key>Name</key><string>Test List</string>
+			<key>Playlist Items</key>
+			<array>
+				<dict>
+					<key>Track ID</key><integer>243</integer>
+				</dict>
+			</array>
+		</dict>
+	</array>
+	<key>Music Folder</key><string>file:///Users/gvollink/Music/iTunes/iTunes%20Media/</string>
+</dict>
+</plist>
