@@ -23,7 +23,7 @@
  */
 #include "djb/str.h"
 
-#define PLAYLISTER_VERSION "0.6"
+#define PLAYLISTER_VERSION "0.7"
 
 #if 1 == HAS_ARC4RANDOM     /* DEFINED (or not) in CONFIGURE.h */
 #define configrandseed()

@@ -33,8 +33,22 @@ utarray.h: uthash
 	ln -fs uthash/src/utarray.h
 
 uthash:
+	@echo "    "
+	@echo "    HEY!  You need a copy of UTHASH locally.  Try this:"
+	@echo "    "
+	@echo "git clone https://gitlab.home.vollink.com/not-mine/troydhanson/uthash.git"
+	@echo "    my (tested) copy"
+	@echo "    ---- OR ----"
 	@echo "git clone https://github.com/troydhanson/uthash.git"
-	false   # force a fail here.
+	@echo "    original (latest) copy"
+	@echo "    "
+	@echo "    If you have this checked out somewhere else,"
+	@echo "    a softlink to it will work too..."
+	@echo "ln -s ../uthash ."
+	@echo "    "
+	@echo "    Come back when I can find uthash!"
+	@echo "    "
+	@false   # force a fail here.
 
 distclean: clean
 	-rm -f $(TARGET) $(UTHASH)

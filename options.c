@@ -160,7 +160,8 @@ initOpts(char *me)
         memset(revision, 0, 64);
     }
     
-    sprintf(revision, "%s", "$Rev: 47 $");
+    /* No longer using subversion as primary, so Rev is no longer valid. */
+    sprintf(revision, "%s", "$Rev: 0 $");
     removeString(revision, "$Rev: ", 64);
     removeString(revision, " $", 64);
 
