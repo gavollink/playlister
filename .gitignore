@@ -8,3 +8,4 @@ utarray.h
 uthash.h
 playlister
 *.playlister
+tests/test_utils

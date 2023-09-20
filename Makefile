@@ -8,7 +8,7 @@ endif
 CFLAGS+=-I/usr/include/libxml2
 #CCFLAGS+=-ggdb
 LFLAGS=-lxml2
-
+BUILDDIR=$(shell pwd)
 INSTALLDIR=
 
 FINAL=playlister
@@ -57,6 +57,9 @@ endif
 
 $(FINAL): $(INTERIM)
 	cp $(INTERIM) $(FINAL)
+
+test: $(FINAL)
+	cd tests && $(MAKE) BUILDDIR=$(BUILDDIR) TARGET=$(FINAL)
 
 %.o: %.c $(X_DEPS) $(UTHASH)
 	@if [ "1" = "$(NEEDTARGET)" ]; then \
