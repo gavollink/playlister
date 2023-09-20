@@ -72,4 +72,10 @@ str_start.o: ../djb/str_start.c
 utils.o: ../utils.c
 	gcc -c $< -o $@ $(CFLAGS)
 
+clean:
+	- rm -f *.o
+
+dist-clean: clean
+	- rm -f test_utils
+
 # vim: sw=4 ts=4 noexpandtab

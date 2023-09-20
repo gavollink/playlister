@@ -112,12 +112,6 @@ install: $(FINAL)
 		false ;\
 	fi
 
-clean:
-	-rm -f *.o *.obj *.$(FINAL)
-
-dist-clean: clean
-	-rm -f $(FINAL)
-
 uthash.h: uthash
 	ln -fs uthash/src/uthash.h
 
@@ -156,6 +150,14 @@ str_chr.o: djb/str_chr.c
 
 str_start.o: djb/str_start.c
 	gcc -c $< -o $@ $(CFLAGS) $(TARGET)
+
+clean:
+	-rm -f *.o *.obj *.$(FINAL)
+	cd tests && $(MAKE) clean
+
+dist-clean: clean
+	-rm -f $(FINAL)
+	cd tests && $(MAKE) dist-clean
 
 # FROM WIKIPEDIA...
 #
