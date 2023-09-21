@@ -50,6 +50,7 @@ else ifeq ($(shell test "Darwin" = $(SYS); echo $$?), 0)
 # This is a macOS between Yosemite (10.10, D14) and Catalina (10.15, D19)
 # Yosemite is the earliest target macOS I own (or have access to),
 INTERIM=$(ARCH).$(FINAL)
+TARGET=$(TARGET_X86_64)
 NEEDTARGET=1
 else
 INTERIM=default.$(FINAL)
