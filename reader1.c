@@ -1,10 +1,9 @@
 /****************************************************************************
  * reader1.c
- * $Rev: 33 $
  *
  * Parse an iTunes XML file with xmlReader library
  *
- * Copyright (c) 2019, Gary Allen Vollink.  http://voll.ink/playlister
+ * Copyright (c) 2019-2024, Gary Allen Vollink.  http://voll.ink/playlister
  * All rights reserved.
  *
  * Licence to use, see CDDLICENSE.txt file in this distribution.

@@ -1,10 +1,9 @@
 /****************************************************************************
  * File: utils.c
- * $Rev: 49 $
  *
  * String manipulation, etc.
  *
- * Copyright (c) 2019, Gary Allen Vollink.  http://voll.ink/playlister
+ * Copyright (c) 2019-2024, Gary Allen Vollink.  http://voll.ink/playlister
  * All rights reserved.
  *
  * Licence to use, see CDDLICENSE.txt file in this distribution.
@@ -20,13 +19,23 @@
 #include "utils.h"
 #include "options.h"
 
+const char * const LogString[] = {
+    [FATAL]   = "FATAL",
+    [ERROR]   = "ERROR",
+    [WARN]    = "WARN",
+    [INFO]    = "INFO",
+    [VERBOSE] = "VERBOSE",
+    [DEBUG]   = "DEBUG",
+    [DUMP]    = "DUMP"
+};
+
 void
 initUtils()
 {
     /* Setting locale. */
     setlocale(LC_ALL, "");
 
-    /* This is a define macro, see CONFIGURE.h */
+    /* This is a define macro, see configure.h */
     configrandseed();
 
     return;
@@ -236,7 +245,8 @@ void
 superdebug(const char* text, ...)
 {
     va_list args;
-    if (4 <= Opts.verbose) {
+    if (DUMP <= Opts.verbose) {
+        fprintf(stderr, "%-7s: ", LogString[DUMP]);
         va_start(args, text);
         vfprintf(stderr, text, args);
         va_end(args);
@@ -247,7 +257,8 @@ void
 extradebug(const char* text, ...)
 {
     va_list args;
-    if (3 <= Opts.verbose) {
+    if (DEBUG <= Opts.verbose) {
+        fprintf(stderr, "%-7s: ", LogString[DEBUG]);
         va_start(args, text);
         vfprintf(stderr, text, args);
         va_end(args);
@@ -259,7 +270,8 @@ void
 mydebug(const char* text, ...)
 {
     va_list args;
-    if (2 <= Opts.verbose) {
+    if (VERBOSE <= Opts.verbose) {
+        fprintf(stderr, "%-7s: ", LogString[VERBOSE]);
         va_start(args, text);
         vfprintf(stderr, text, args);
         va_end(args);
@@ -270,7 +282,8 @@ void
 myprint(const char* text, ...)
 {
     va_list args;
-    if (1 <= Opts.verbose) {
+    if (INFO <= Opts.verbose) {
+        fprintf(stderr, "%-7s: ", LogString[INFO]);
         va_start(args, text);
         vprintf(text, args);
         va_end(args);
@@ -281,13 +294,33 @@ void
 mywarning(const char* text, ...)
 {
     va_list args;
-    if (0 <= Opts.verbose) {
+    if (WARN <= Opts.verbose) {
+        fprintf(stderr, "%-7s: ", LogString[WARN]);
         va_start(args, text);
         vfprintf(stderr, text, args);
         va_end(args);
     }
 }
 
+void
+myerror(const char* text, ...)
+{
+    va_list args;
+    fprintf(stderr, "%-7s: ", LogString[ERROR]);
+    va_start(args, text);
+    vfprintf(stderr, text, args);
+    va_end(args);
+}
+
+void
+myfatal(const char* text, ...)
+{
+    va_list args;
+    fprintf(stderr, "%-7s: ", LogString[FATAL]);
+    va_start(args, text);
+    vfprintf(stderr, text, args);
+    va_end(args);
+}
 
 char *
 checkFileExists(char *filename, size_t fnamesize)
@@ -335,7 +368,7 @@ checkFileExists(char *filename, size_t fnamesize)
         return checkFileExists(filename, fnamesize);
     }
     
-    mywarning( "WARN: Segment [%s]\nDump:", lpart );
+    mywarning( "Segment [%s]\nDump:", lpart );
     for (int cx = 0; '\0' != lpart[cx]; cx++ ) {
         mywarning( " [%c]: %02x", lpart[cx], lpart[cx] );
     }
@@ -370,10 +403,10 @@ tryFindMatch(char *filename, char *segment)
 
     while(NULL != ( entry = readdir(dh) )) {
         if ( 0 == strcmp( entry->d_name, segment ) ) {
-            mywarning( "ERROR: tryFindMatch, segment found without modify.\n" );
-            mywarning( "ERROR: tryFindMatch, segment  [%s].\n"
+            myerror( "tryFindMatch, segment found without modify.\n" );
+            myerror( "tryFindMatch, segment  [%s].\n"
                         , segment );
-            mywarning( "ERROR: tryFindMatch, filesystem %s [%s].\n"
+            myerror( "tryFindMatch, filesystem %s [%s].\n"
                         , ((DT_DIR&entry->d_type)?"dir":"file")
                         , entry->d_name );
             closedir(dh);

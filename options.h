@@ -1,10 +1,9 @@
 /****************************************************************************
  * File: options.h
- * $Rev: 48 $
  *
  * Command line option structure and handling.
  *
- * Copyright (c) 2019, Gary Allen Vollink.  http://voll.ink/playlister
+ * Copyright (c) 2019-2024, Gary Allen Vollink.  http://voll.ink/playlister
  * All rights reserved.
  *
  * Licence to use, see CDDLICENSE.txt file in this distribution.
@@ -22,14 +21,15 @@ struct options {
     int        randomize;
     int        verify;
     int        m3uextended;
-    char       self[1024]; // argv[0]
-    char       config[1024]; // -c --con... config()
-    char       itunes_xml_file[1024]; // -x --xml itunesxml()
-    char       itune_path[1024]; // -r --rempath origpath()
-    char       replace_path[1024]; // -n --newpath newpath()
-    char       output_path[1024]; // -o --output output()
-    char       extension[64]; // -X --extension extension()
-    char       dist_version[64]; // Software version string.
+    char       self[1025]; // argv[0]
+    char       config[1025]; // -c --con... config()
+    char       itunes_xml_file[1025]; // -x --xml itunesxml()
+    char       itune_path[1025]; // -r --rempath origpath()
+    char       replace_path[1025]; // -n --newpath newpath()
+    char       output_path[1025]; // -o --output output()
+    char       extension[65]; // -X --extension extension()
+    char       dist_version[65]; // Software version string.
+    int        wantHelp;
     int        needHelp;
     UT_array * playlist;
 };
@@ -65,7 +65,8 @@ extern struct options Opts;
 #define arghelp(a)   ( (0==str_diffn("--hel", (a), 5) ) \
         || (0==str_diffn("-?", (a), 3)) \
         || (0==str_diffn("-h", (a), 3)) )
-#endif /* MAIN_C */
+#define arghelpconf(a) (0==str_diffn("--help_c", (a), 8) )
+#endif /* OPTIONS_C */
 
 #endif /* OPTIONS_H */
 /**

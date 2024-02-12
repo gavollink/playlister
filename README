@@ -1,4 +1,4 @@
-Copyright (c) 2019, Gary Allen Vollink.  http://voll.ink/playlister
+Copyright (c) 2019-2024, Gary Allen Vollink.  http://voll.ink/playlister
 All rights reserved.
 
 Licence to use, see CDDLICENSE.txt file in this distribution.
@@ -18,6 +18,9 @@ Post 1.0 Future TODO list
 
 CHANGES:
 
+Version: 1.00.47:
+Readme changes, move from SubVersion to Git, functionality the same.
+
 Version: 0.6:
 Add feature to verify playlist output filenames and recover if the only
 difference is cAsE.  If the file cannot be found, it will not appear
@@ -31,4 +34,4 @@ Version: 0.4
 (( Revision 38 ))
 First public release.
 
-# playlister/README $Rev: 45 $
+# playlister/README

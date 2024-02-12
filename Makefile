@@ -8,6 +8,8 @@ endif
 CFLAGS+=-I/usr/include/libxml2
 #CCFLAGS+=-ggdb
 LFLAGS=-lxml2
+# IF arc4random is wanted and HAS_ARC4RANDOM 1 is defined by configure.h:
+# LFLAGS+=-lbsd
 BUILDDIR=$(shell pwd)
 INSTALLDIR=
 
@@ -19,7 +21,7 @@ OBJS+=list_storage.o main.o listm3u.o str_len.o
 OBJS+=str_diffn.o str_chr.o str_start.o
 UTHASH=uthash.h utarray.h
 X_DEPS=Makefile
-X_DEPS+=CONFIGURE.h utils.h reader1.h storage.h options.h listm3u.h
+X_DEPS+=configure.h utils.h reader1.h storage.h options.h listm3u.h
 
 SYS=$(shell uname -s)
 ARCH=$(shell uname -m)
@@ -61,6 +63,13 @@ $(FINAL): $(INTERIM)
 
 test: $(FINAL)
 	cd tests && $(MAKE) BUILDDIR=$(BUILDDIR) TARGET=$(FINAL)
+
+configure.h: CONFIGURE.h
+	@if [ -r configure.h ]; then \
+		touch configure.h; \
+	else \
+		grep -v "DO NOT EDIT" CONFIGURE.h > configure.h; \
+	fi
 
 %.o: %.c $(X_DEPS) $(UTHASH)
 	@if [ "1" = "$(NEEDTARGET)" ]; then \

@@ -3,7 +3,7 @@
  *
  * Command Line Parsing
  *
- * Copyright (c) 2019, Gary Allen Vollink.  http://voll.ink/playlister
+ * Copyright (c) 2019-2024, Gary Allen Vollink.  http://voll.ink/playlister
  * All rights reserved.
  *
  * Licence to use, see CDDLICENSE.txt file in this distribution.
@@ -33,6 +33,7 @@ dohelp()
     }
     printf("Version %s\n", Opts.dist_version );
     printf("Extract playlists from iTunes Music Library.xml to m3u\n");
+    printf("\n");
     printf("License: see --about\n");
     printf("\n");
     printf("\n");
@@ -109,11 +110,51 @@ dohelp()
     printf("-q --quiet\n");
     printf("\tLess verbose.\n");
     printf("\n");
+    printf("--help_config\n");
+    printf("\tSample configuration file\n");
+    printf("\n");
     printf("-h -? --help\n");
     printf("\tThis help.\n");
     printf("\n");
     printf("--about\n");
     printf("\tCopyright and License information\n");
+}
+
+void
+dohelpconf()
+{
+    if ( str_diffn("playlister", Opts.self, 11) ) {
+        printf("Playlister - running as %s\n",
+                Opts.self);
+    }
+    else {
+        printf("Playlister\n");
+    }
+    printf("CONFIGURATION FILE HELP, Version %s\n", Opts.dist_version );
+    printf("\n");
+    printf(" * Any line that exceeds %d charaters will be truncated.\n",
+            BUFSIZ-1);
+    printf(" * Any path that exceeds 1024 characters will be truncated.\n");
+    printf(" * random and verify can accept y, Y, or 1 to mean yes.\n");
+    printf(" * extension does not need a prefixed period.\n");
+    printf(" * location_replace can \"= .\", if"
+           " the target player accepts it.\n");
+    printf("\n");
+    printf("\n");
+    printf("CONFIGURATION FILE SAMPLE\n");
+    printf("\n");
+    printf("itunesxml = /path/to/xml\n");
+    printf("output_dir = /path/to/put/playlists\n");
+    printf("extension = m3u8\n");
+    printf("random = Y\n");
+    printf("verify = Y\n");
+    printf("location_remove = C:\\path\\to\\iTunes\\iTunes Media\\\n");
+    printf("location_replace = /path/on/destination\n");
+    printf("\n");
+    printf("[LISTS]\n");
+    printf("Favorite Playlist\n");
+    printf("Smart One\n");
+    printf("\n");
 }
 
 
@@ -128,7 +169,7 @@ doabout()
         printf("Playlister\n");
     }
     printf("Version %s\n", Opts.dist_version );
-    printf("Copyright (c) 2019, Gary Allen Vollink.  %s\n"
+    printf("Copyright (c) 2019-2024, Gary Allen Vollink.  %s\n"
             , "http://voll.ink/playlister");
     printf("All rights reserved.\n");
     printf("\n");
@@ -149,27 +190,12 @@ initOpts(char *me)
 {
     char *idx = NULL;
     char newme[BUFSIZ] = "\0\0\0\0";
-    char *revision = NULL;
-
-    if ( NULL == ( revision = malloc(64) ) ) {
-        mywarning("\nERROR: initOpts revision string: %s\n"
-                , strerror(errno) );
-        exit(5);
-    }
-    else {
-        memset(revision, 0, 64);
-    }
-    
-    /* No longer using subversion as primary, so Rev is no longer valid. */
-    sprintf(revision, "%s", "$Rev: 0 $");
-    removeString(revision, "$Rev: ", 64);
-    removeString(revision, " $", 64);
 
     if ( OptsInit ) {
         utarray_free(Opts.playlist);
     }
     memset(&Opts, 0, sizeof(struct options));
-    Opts.verbose = 1;
+    Opts.verbose = 3;       // INFO
     if (   ( strlen(me)   )
         && ( idx = rindex(me, '/') )
         && ( 1 < strlen(idx) )
@@ -182,22 +208,14 @@ initOpts(char *me)
     }
     strncpy(Opts.config, Opts.self, 1018);
     strncpy(Opts.config + strlen(Opts.config), ".conf", 6);
-    strncpy(Opts.extension, "m3u", 4);
-    if ( 63 > ( strlen(PLAYLISTER_VERSION) + strlen(revision) ) ) {
-        sprintf(Opts.dist_version, "%s.%s"
-                , PLAYLISTER_VERSION, revision);
-    }
-    else if ( 63 > ( strlen(revision) ) ) {
-        sprintf(Opts.dist_version, "_%s", revision);
-    }
-    else if ( 62 > ( strlen(PLAYLISTER_VERSION) ) ) {
-        sprintf(Opts.dist_version, "%s.?", PLAYLISTER_VERSION);
+    if ( 63 > ( strlen(PLAYLISTER_VERSION) ) ) {
+        sprintf(Opts.dist_version, "%s", PLAYLISTER_VERSION);
     }
     else {
         strncpy(Opts.dist_version, "Unknown", 64);
     }
+    strncpy(Opts.extension, "m3u", 4);
     utarray_new(Opts.playlist, &ut_str_icd);
-    free(revision);
     OptsInit = 1;
 }
 
@@ -269,11 +287,10 @@ parseConfigOption(char *line)
     char buffer1[BUFSIZ] = "\0";
     char buffer2[BUFSIZ] = "\0";
     char *      indexret = NULL;
-    int           retval = 0;
     int            rxret = 0;
     regex_t        lists;
 
-    strncpy(buffer1, line, BUFSIZ);
+    strncpy(buffer1, line, BUFSIZ-1);
 
     /* Compile regular expression */
     rxret = regcomp(&lists, "^\\[lists\\]$", REG_ICASE|REG_EXTENDED|REG_NOSUB);
@@ -285,9 +302,8 @@ parseConfigOption(char *line)
     rxret = regexec(&lists, buffer1, 0, NULL, 0);
     if (!rxret) {
         // extradebug("RegEx lists matched, %s\n", buffer1);
-        retval = 2;
         regfree(&lists);
-        return(retval);
+        return(2);
     }
     else if (REG_NOMATCH == rxret) {
         // printf("RegEx for lists DID NOT match, [%s]\n", buffer1);
@@ -305,7 +321,7 @@ parseConfigOption(char *line)
             && ( strlen(buffer1) > ( indexret - buffer1 + 1 ) )
             ) {
             indexret[0] = '\0';
-            strncpy(buffer2, &indexret[1], BUFSIZ);
+            strncpy(buffer2, &indexret[1], BUFSIZ-1);
         }
     }
 
@@ -314,7 +330,7 @@ parseConfigOption(char *line)
             strncpy(Opts.itunes_xml_file, buffer2, 1024);
         }
         else {
-            mywarning("WARNING: itunesxml config option with no value.\n");
+            mywarning("itunesxml config option with no value.\n");
         }
     }
     else if ( 0 == str_diffn("output_", buffer1, 7) ) {
@@ -322,7 +338,7 @@ parseConfigOption(char *line)
             strncpy(Opts.output_path, buffer2, 1024);
         }
         else {
-            mywarning("WARNING: output_path config option with no value.\n");
+            mywarning("output_path config option with no value.\n");
         }
     }
     else if ( 0 == str_diffn("verify", buffer1, 6) ) {
@@ -338,7 +354,7 @@ parseConfigOption(char *line)
             }
         }
         else {
-            mywarning("WARNING: random config option with no value.");
+            mywarning("verify config option with no value.");
         }
     }
     else if ( 0 == str_diffn("format", buffer1, 7) ) {
@@ -353,12 +369,12 @@ parseConfigOption(char *line)
                 Opts.m3uextended = 0;
             }
             else {
-                mywarning("WARNING: Unknown format request: %s\n"
+                mywarning("Unknown format request: %s\n"
                         , buffer2);
             }
         }
         else {
-            mywarning("WARNING: format config option with no value.\n");
+            mywarning("format config option with no value.\n");
         }
     }
     else if ( 0 == str_diffn("ext", buffer1, 3) ) {
@@ -366,7 +382,7 @@ parseConfigOption(char *line)
             strncpy(Opts.extension, buffer2, 64);
         }
         else {
-            mywarning("WARNING: extension config option with no value.\n");
+            mywarning("extension config option with no value.\n");
         }
     }
     else if ( 0 == str_diffn("location_remove", buffer1, 15) ) {
@@ -375,7 +391,7 @@ parseConfigOption(char *line)
             strncpy(Opts.itune_path, buffer2, 1024);
         }
         else {
-            mywarning("WARNING: location_remove config option with no value.\n");
+            mywarning("location_remove config option with no value.\n");
         }
     }
     else if ( 0 == str_diffn("location_replace", buffer1, 16) ) {
@@ -383,7 +399,7 @@ parseConfigOption(char *line)
             strncpy(Opts.replace_path, buffer2, 1024);
         }
         else {
-            mywarning("WARNING: location_replace config option with no value.\n");
+            mywarning("location_replace config option with no value.\n");
         }
     }
     else if ( 0 == str_diffn("random", buffer1, 6) ) {
@@ -399,7 +415,7 @@ parseConfigOption(char *line)
             }
         }
         else {
-            mywarning("WARNING: random config option with no value.\n");
+            mywarning("random config option with no value.\n");
         }
     }
     return 0;
@@ -420,7 +436,7 @@ readConfigFile()
     extradebug("readConfigFile(): start\n");
 
     if ( NULL == ( linebuffer = malloc(linebufsiz) ) ) {
-        mywarning("\nERROR: Configuration file reader: %s\n"
+        myerror("Configuration file reader: %s\n"
                 , strerror(errno) );
         exit(5);
     }
@@ -488,7 +504,7 @@ readConfigFile()
     if ( statret ) {
         if ( Opts.config_requested ) {
             dohelp();
-            fprintf(stderr, "\nConfiguration file %s: %s\n"
+            myfatal( "Configuration file %s: %s\n"
                     , filename, strerror(errno) );
             exit(5);
         }
@@ -500,7 +516,7 @@ readConfigFile()
 
     fh = fopen(filename, "r");
     if ( 0 >= fh ) {
-        fprintf(stderr, "\nConfiguration file %s: %s\n"
+        myfatal( "Configuration file %s: %s\n"
                 , filename, strerror(errno) );
         exit(5);
     }
@@ -604,7 +620,7 @@ parseOpts(int argc, char **argv)
                 strncpy(Opts.itunes_xml_file, argv[cx], 1024);
             }
             else {
-                mywarning("ERROR: %s passed with no data.\n", argv[cx]);
+                myerror("%s passed with no data.\n", argv[cx]);
                 _helpBeat(1);
             }
         }
@@ -614,7 +630,7 @@ parseOpts(int argc, char **argv)
                 strncpy(Opts.itune_path, argv[cx], 1024);
             }
             else {
-                mywarning("ERROR: %s passed with no data.\n", argv[cx]);
+                myerror("%s passed with no data.\n", argv[cx]);
                 _helpBeat(1);
             }
         }
@@ -624,7 +640,7 @@ parseOpts(int argc, char **argv)
                 strncpy(Opts.replace_path, argv[cx], 1024);
             }
             else {
-                mywarning("ERROR: %s passed with no data.\n", argv[cx]);
+                myerror("%s passed with no data.\n", argv[cx]);
                 _helpBeat(1);
             }
         }
@@ -641,13 +657,13 @@ parseOpts(int argc, char **argv)
                     Opts.m3uextended = 0;
                 }
                 else {
-                    mywarning("ERROR: Unknown format request: %s\n"
+                    myerror("Unknown format request: %s\n"
                             , argv[cx]);
                     _helpBeat(1);
                 }
             }
             else {
-                mywarning("ERROR: %s passed with no data.\n", argv[cx]);
+                myerror("%s passed with no data.\n", argv[cx]);
                 _helpBeat(1);
             }
         }
@@ -657,7 +673,7 @@ parseOpts(int argc, char **argv)
                 strncpy(Opts.output_path, argv[cx], 1024);
             }
             else {
-                mywarning("ERROR: %s passed with no data.\n", argv[cx]);
+                myerror("%s passed with no data.\n", argv[cx]);
                 _helpBeat(1);
             }
         }
@@ -673,7 +689,7 @@ parseOpts(int argc, char **argv)
                 strncpy(Opts.extension, argv[cx], 64);
             }
             else {
-                mywarning("ERROR: %s passed with no data.\n", argv[cx]);
+                myerror("%s passed with no data.\n", argv[cx]);
                 _helpBeat(1);
             }
         }
@@ -684,7 +700,7 @@ parseOpts(int argc, char **argv)
                 utarray_push_back(Opts.playlist, &argv[cx]);
             }
             else {
-                mywarning("ERROR: %s passed with no data.\n", argv[cx]);
+                myerror("%s passed with no data.\n", argv[cx]);
                 _helpBeat(1);
             }
         }
@@ -693,38 +709,24 @@ parseOpts(int argc, char **argv)
             utarray_new(Opts.playlist, &ut_str_icd);
         }
         else if ( arghelp(argv[cx]) ) {
-            _helpBeat(0);
+            if ( arghelpconf(argv[cx]) ) {
+                Opts.wantHelp = 2;
+            } else {
+                Opts.wantHelp = 1;
+                _helpBeat(0);
+            }
         }
         else {
-            mywarning("\nERROR: Unrecognized option: %s\n", argv[cx]);
+            myerror("Unrecognized option: %s\n", argv[cx]);
             _helpBeat(1);
-        }
-    }
-
-    if ( 0 == strlen(Opts.itunes_xml_file) ) {
-        _helpBeat(1);
-        mywarning("ERROR: Can't run without an itunes_xml_file.\n");
-    }
-
-    if ( Opts.needHelp ) {
-        dohelp();
-        if ( 1 < Opts.needHelp ) {
-            mywarning("\nNOTE %i ERRORS ABOVE\n", Opts.needHelp);
-            exit(5);
-        }
-        else if ( 1 == Opts.needHelp ) {
-            mywarning("\nNOTE ERROR ABOVE\n");
-            exit(5);
-        }
-        else {
-            exit(0);
         }
     }
 
     mydebug("Options           Program Name = %s\n", Opts.self);
     mydebug("Options     configuration file = %s\n"
         , (strlen(Opts.config)?Opts.config:"NONE"));
-    mydebug("Options                Verbose = %i\n", Opts.verbose);
+    mydebug("Options                Verbose = %i (%s)\n",
+            Opts.verbose, LogString[Opts.verbose]);
     mydebug("Options              Randomize = %i\n", Opts.randomize);
     mydebug("Options    Verify output files = %i\n", Opts.verify);
     mydebug("Options        iTunes XML file = %s\n", Opts.itunes_xml_file);
@@ -734,6 +736,35 @@ parseOpts(int argc, char **argv)
     mydebug("Options Playlist output format = %s\n"
             , (Opts.m3uextended?"M3U Extended":"M3U standard"));
     mydebug("Options     Playlist extension = %s\n", Opts.extension);
+
+    if ( Opts.wantHelp ) {
+        if ( 2 == Opts.wantHelp ) {
+            dohelpconf();
+        } else {
+            dohelp();
+        }
+        exit(0);
+    }
+
+    if ( 0 == strlen(Opts.itunes_xml_file) ) {
+        _helpBeat(1);
+        myerror("Can't run without an itunes_xml_file.\n");
+    }
+
+    if ( Opts.needHelp ) {
+        dohelp();
+        if ( 1 < Opts.needHelp ) {
+            mywarning("NOTE %i ERRORS ABOVE\n", Opts.needHelp);
+            exit(5);
+        }
+        else if ( 1 == Opts.needHelp ) {
+            mywarning("NOTE ERROR ABOVE\n");
+            exit(5);
+        }
+        else {
+            exit(0);
+        }
+    }
 }
 
 

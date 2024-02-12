@@ -1,10 +1,9 @@
 /****************************************************************************
  * track_storage.c
- * $Rev: 47 $
  *
  * Track information hash management (memory storage)
  *
- * Copyright (c) 2019, Gary Allen Vollink.  http://voll.ink/playlister
+ * Copyright (c) 2019-2024, Gary Allen Vollink.  http://voll.ink/playlister
  * All rights reserved.
  *
  * Licence to use, see CDDLICENSE.txt file in this distribution.
@@ -22,7 +21,6 @@
 #include "storage.h"
 
 struct trackmap    *track = NULL;
-
 
 void
 _set_track(int trid,  char* name, char* value)

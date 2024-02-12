@@ -1,10 +1,9 @@
 /****************************************************************************
  * utils.h
- * $Rev: 48 $
  *
  * String manipulation, etc.
  *
- * Copyright (c) 2019, Gary Allen Vollink.  http://voll.ink/playlister
+ * Copyright (c) 2019-2024, Gary Allen Vollink.  http://voll.ink/playlister
  * All rights reserved.
  *
  * Licence to use, see CDDLICENSE.txt file in this distribution.
@@ -15,7 +14,7 @@
 #include <locale.h>      // setlocale()
 #include <dirent.h>      // opendir(), readdir()
 #include "utarray.h"
-#include "utils.h"
+#include "configure.h"   // Created by Makefile from CONFIGURE.h
 
 /***************************************
  * Dan J. Bernstien code (Public Domain) -- included in this package.
@@ -23,12 +22,16 @@
  */
 #include "djb/str.h"
 
-#define PLAYLISTER_VERSION "0.7"
+/* THIS SHOULD NEVER BE MORE THAN 63 strlen()  */
+#ifndef PLAYLISTER_VERSION
+#define PLAYLISTER_VERSION "1.00.47"
+#endif
 
-#if 1 == HAS_ARC4RANDOM     /* DEFINED (or not) in CONFIGURE.h */
+#if 1 == HAS_ARC4RANDOM     /* DEFINED (or not) in configure.h */
+#include <bsd/stdlib.h>
 #define configrandseed()
 #define configrand() arc4random()
-#elif 1 == HAS_SRANDDEV     /* DEFINED (or not) in CONFIGURE.h */
+#elif 1 == HAS_SRANDDEV     /* DEFINED (or not) in configure.h */
 #define configrandseed() sranddev()
 #define configrand() rand()
 #else
@@ -36,6 +39,20 @@
 #define configrandseed() srand(time(NULL))
 #define configrand() rand()
 #endif /* HAS_SRANDOMDEV | HAS_SRANDDEV */
+
+enum LogLevel {
+    FATAL,
+    ERROR,
+    WARN,
+    INFO,
+    VERBOSE,
+    DEBUG,
+    DUMP
+};
+
+#ifndef UTILS_C
+    extern const char * const LogString[];
+#endif
 
 void     initUtils       (void);
 char   * replaceString   (char *str, const char *search
@@ -50,6 +67,7 @@ int      URIunescape     (char *str);
 char   * checkFileExists (char *filename, size_t fnamesize);
 char   * tryFindMatch    (char *filename, char *portion);
 void     randomUTarray   (UT_array *orig);
+void     myerror         (const char* text, ...);
 void     mywarning       (const char* text, ...);
 void     myprint         (const char* text, ...);
 void     mydebug         (const char* text, ...);

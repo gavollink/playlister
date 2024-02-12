@@ -1,8 +1,7 @@
 /****************************************************************************
  * File listm3u.c
  *
- *
- * Copyright (c) 2019, Gary Allen Vollink.  http://voll.ink/playlister
+ * Copyright (c) 2019-2024, Gary Allen Vollink.  http://voll.ink/playlister
  * All rights reserved.
  *
  * Licence to use, see CDDLICENSE.txt file in this distribution.
@@ -59,8 +58,10 @@ _mk_list_filename(char *filepath, struct list *work, size_t pathsz)
                 filebase[cx] = '_';
             }
         }
-        strncpy(filebase + strlen(filebase), "."
-                , ( 1024 - strlen(filebase)) );
+        if ( '.' != Opts.extension[0] ) {
+            strncpy(filebase + strlen(filebase), "."
+                    , ( 1024 - strlen(filebase)) );
+        }
         strncpy(filebase + strlen(filebase), Opts.extension
                 , ( 1024 - strlen(filebase)) );
         mydebug("List %s will be created as filebase [%s]\n"
