@@ -61,19 +61,16 @@
  * HAS_ARC4RANDOM
  * man arc4random -- should display page if the system has it.
  *
- * NOTE: This is preferred over the default, and setting this
+ * NOTE: On LINUX, this is preferred over the default, and setting this
  * may need tweaking the Makefile as well to include whatever
- * library stores this on YOUR system (on Debian, this is -lbsd).
+ * library stores this on YOUR system (on Deb-like, this is -lbsd).
  */
 
 // #define HAS_ARC4RANDOM 1
 
 /***************************************
  * HAS_SRANDDEV
- * man srandev -- should display page if the system has it.
- *
- * This is better than the default, but should only be used
- * if arc4random isn't available.
+ * man srandev -- should display page if the macOS system has it.
  */
 
 // #define HAS_SRANDDEV 1

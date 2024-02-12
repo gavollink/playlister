@@ -21,7 +21,7 @@ OPTIONAL
 
 The default randomizer isn't very random, which can make the output of the
 random files predictable in certain situations.  
-Use arc4random (preferred) or sranddev.
+Use arc4random (on Linux) or sranddev (on macOS).
 
 
 DEBIAN DERIVED SYSTEMS NOTES:

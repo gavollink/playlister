@@ -18,6 +18,11 @@ Post 1.0 Future TODO list
 
 CHANGES:
 
+Version: 1.00.?? (future release):
+README and README.md updates.
+Makefile now includes "configure.h" (or copies it from CONFIGURE.h)
+Now has --help_config to describe a sample configuration file
+
 Version: 1.00.47:
 Readme changes, move from SubVersion to Git, functionality the same.
 
