@@ -368,11 +368,7 @@ checkFileExists(char *filename, size_t fnamesize)
         return checkFileExists(filename, fnamesize);
     }
     
-    mywarning( "Segment [%s]\nDump:", lpart );
-    for (int cx = 0; '\0' != lpart[cx]; cx++ ) {
-        mywarning( " [%c]: %02x", lpart[cx], lpart[cx] );
-    }
-    mywarning( "\n" );
+    mywarning( "Segment [%s]\n", lpart );
 
     return NULL;
 }

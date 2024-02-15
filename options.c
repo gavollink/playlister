@@ -48,8 +48,19 @@ dohelp()
     printf("\t(not compatible with all players).\n");
     printf("\t\tValue: %s\n", (Opts.m3uextended?"m3u Extended":"m3u standard"));
     printf("\n");
+    printf("--verify_path <path>\n");
+    printf("\tPath to check for file existance, implies --verify.\n");
+    printf("\t  If not set --newpath will be used.\n");
+    if ( strlen(Opts.verify_path) ) {
+        printf("\t\tValue: %s\n", Opts.verify_path);
+    }
+    else if ( strlen(Opts.replace_path) ) {
+        printf("\t\tValue: %s (from newpath)\n", Opts.replace_path);
+    }
+    printf("\n");
     printf("--verify\n");
     printf("\tVerify existance of output (warn/omit if not found).\n");
+    printf("\t  --verify_path is applied and checked for each entry.\n");
     printf("\t\tValue: %s\n", (Opts.verify?"Yes":"No"));
     printf("\n");
     printf("--randomize\n");
@@ -136,15 +147,20 @@ dohelpconf()
             BUFSIZ-1);
     printf(" * Any path that exceeds 1024 characters will be truncated.\n");
     printf(" * random and verify can accept y, Y, or 1 to mean yes.\n");
+    printf(" * format is either m3u or extm3u.\n");
     printf(" * extension does not need a prefixed period.\n");
     printf(" * location_replace can \"= .\", if"
            " the target player accepts it.\n");
+    printf(" * if verify_dir isn't specified, location_replace is used.\n");
+    printf("   * verify_dir implies verify=Y\n");
     printf("\n");
     printf("\n");
     printf("CONFIGURATION FILE SAMPLE\n");
     printf("\n");
     printf("itunesxml = /path/to/xml\n");
     printf("output_dir = /path/to/put/playlists\n");
+    printf("verify_dir = /path/on/destination\n");
+    printf("format = extm3u\n");
     printf("extension = m3u8\n");
     printf("random = Y\n");
     printf("verify = Y\n");
@@ -325,23 +341,35 @@ parseConfigOption(char *line)
         }
     }
 
-    if ( 0 == str_diffn("itunesxml", buffer1, BUFSIZ) ) {
+    if ( 0 == str_diffn("itunesxml", buffer1, 5) ) {
         if ( strlen(buffer2) ) {
             strncpy(Opts.itunes_xml_file, buffer2, 1024);
         }
         else {
-            mywarning("itunesxml config option with no value.\n");
+            myfatal("itunesxml config option with no value.\n");
+            exit(1);
         }
     }
-    else if ( 0 == str_diffn("output_", buffer1, 7) ) {
+    else if ( 0 == str_diffn("output_path", buffer1, 6) ) {
         if ( strlen(buffer2) ) {
             strncpy(Opts.output_path, buffer2, 1024);
         }
         else {
-            mywarning("output_path config option with no value.\n");
+            myfatal("output_path config option with no value.\n");
+            exit(1);
         }
     }
-    else if ( 0 == str_diffn("verify", buffer1, 6) ) {
+    else if ( 0 == str_diffn("verify_dir", buffer1, 8) ) {
+        if ( strlen(buffer2) ) {
+            strncpy(Opts.verify_path, buffer2, 1024);
+            Opts.verify = 1;
+        }
+        else {
+            myfatal("verify_dir config option with no value.\n");
+            exit(1);
+        }
+    }
+    else if ( 0 == str_diffn("verify", buffer1, 7) ) {
         if ( strlen(buffer2) ) {
             if (   ( 'y' == buffer2[0] )
                 || ( 'Y' == buffer2[0] )
@@ -354,10 +382,11 @@ parseConfigOption(char *line)
             }
         }
         else {
-            mywarning("verify config option with no value.");
+            myfatal("verify config option with no value.");
+            exit(1);
         }
     }
-    else if ( 0 == str_diffn("format", buffer1, 7) ) {
+    else if ( 0 == str_diffn("format", buffer1, 4) ) {
         if ( strlen(buffer2) ) {
             if ( 0 == strncasecmp(buffer2, "extm3u", 5) ) {
                 Opts.m3uextended = 1;
@@ -369,20 +398,23 @@ parseConfigOption(char *line)
                 Opts.m3uextended = 0;
             }
             else {
-                mywarning("Unknown format request: %s\n"
+                myfatal("Unknown format request: %s\n"
                         , buffer2);
+                exit(1);
             }
         }
         else {
-            mywarning("format config option with no value.\n");
+            myfatal("format config option with no value.\n");
+            exit(1);
         }
     }
-    else if ( 0 == str_diffn("ext", buffer1, 3) ) {
+    else if ( 0 == str_diffn("extension", buffer1, 3) ) {
         if ( strlen(buffer2) ) {
             strncpy(Opts.extension, buffer2, 64);
         }
         else {
-            mywarning("extension config option with no value.\n");
+            myfatal("extension config option with no value.\n");
+            exit(1);
         }
     }
     else if ( 0 == str_diffn("location_remove", buffer1, 15) ) {
@@ -391,7 +423,8 @@ parseConfigOption(char *line)
             strncpy(Opts.itune_path, buffer2, 1024);
         }
         else {
-            mywarning("location_remove config option with no value.\n");
+            myfatal("location_remove config option with no value.\n");
+            exit(1);
         }
     }
     else if ( 0 == str_diffn("location_replace", buffer1, 16) ) {
@@ -399,7 +432,8 @@ parseConfigOption(char *line)
             strncpy(Opts.replace_path, buffer2, 1024);
         }
         else {
-            mywarning("location_replace config option with no value.\n");
+            myfatal("location_replace config option with no value.\n");
+            exit(1);
         }
     }
     else if ( 0 == str_diffn("random", buffer1, 6) ) {
@@ -415,8 +449,13 @@ parseConfigOption(char *line)
             }
         }
         else {
-            mywarning("random config option with no value.\n");
+            myfatal("random config option with no value.\n");
+            exit(1);
         }
+    } else {
+        myfatal("Unrecognized option line: %s = %s\n",
+                buffer1, buffer2 );
+        exit(1);
     }
     return 0;
 }
@@ -678,7 +717,18 @@ parseOpts(int argc, char **argv)
             }
         }
         else if ( argverify(argv[cx]) ) {
-            Opts.verify = 1;
+            if ( argverifypath(argv[cx]) ) {
+                if ( ( cx+1 ) < argc ) {
+                    cx++;
+                    strncpy(Opts.verify_path, argv[cx], 1024);
+                    Opts.verify = 1;
+                } else {
+                    myerror("%s passed with no data.\n", argv[cx]);
+                    _helpBeat(1);
+                }
+            } else {
+                Opts.verify = 1;
+            }
         }
         else if ( randomize(argv[cx]) ) {
             Opts.randomize = 1;

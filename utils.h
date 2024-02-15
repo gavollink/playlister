@@ -24,7 +24,7 @@
 
 /* THIS SHOULD NEVER BE MORE THAN 63 strlen()  */
 #ifndef PLAYLISTER_VERSION
-#define PLAYLISTER_VERSION "1.00.47"
+#define PLAYLISTER_VERSION "1.00.47.1"
 #endif
 
 #if 1 == HAS_ARC4RANDOM     /* DEFINED (or not) in configure.h */

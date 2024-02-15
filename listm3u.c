@@ -104,7 +104,8 @@ char *
 _fix_track_path(int trackid, char *trackpath, size_t tpsz)
 {
     struct  trackmap  *work = NULL;
-    char             *found = NULL;
+    char              *find = NULL;
+    char               *ret = NULL;
 
     if ( NULL == ( work = _get_track(trackid) ) ) {
         return NULL;
@@ -119,7 +120,29 @@ _fix_track_path(int trackid, char *trackpath, size_t tpsz)
     prependString(trackpath, Opts.replace_path, tpsz);
 
     if (Opts.verify) {
-        if ( NULL == checkFileExists(trackpath, tpsz) ) {
+        if ( strlen( Opts.verify_path ) ) {
+            find = (char *)malloc( tpsz+1 );
+            if ( NULL == find ) {
+                myfatal("Out of memory.\n");
+                exit(2);
+            }
+            memset(find, 0, tpsz+1);
+            strncpy(find, work->file, tpsz);
+            if ( 0 == removeString(find, "file://localhost", tpsz) ) {
+                removeString(find, "file://", tpsz);
+            }
+            removeString(find, Opts.itune_path, tpsz);
+            prependString(find, Opts.verify_path, tpsz);
+        }
+        else {
+            find = trackpath;
+        }
+
+        ret = checkFileExists(find, tpsz);
+        if ( find != trackpath ) {
+            free(find);
+        }
+        if ( NULL == ret ) {
             return NULL;
         }
     }

@@ -26,6 +26,7 @@ struct options {
     char       itunes_xml_file[1025]; // -x --xml itunesxml()
     char       itune_path[1025]; // -r --rempath origpath()
     char       replace_path[1025]; // -n --newpath newpath()
+    char       verify_path[1025]; // -o --output output()
     char       output_path[1025]; // -o --output output()
     char       extension[65]; // -X --extension extension()
     char       dist_version[65]; // Software version string.
@@ -42,7 +43,6 @@ extern struct options Opts;
 #define itunesxml(a) ( (0==str_diffn("--xml", (a), 6) ) \
         || (0==str_diffn("-x", (a), 3)) )
 #define randomize(a)   (0==str_diffn("--ran", (a), 5) )
-#define argverify(a)   (0==str_diffn("--veri", (a), 6) )
 #define argformat(a) ( (0==str_diffn("--for", (a), 5) ) \
         || (0==str_diffn("-f", (a), 3)) )
 #define origpath(a)  ( (0==str_diffn("--rem", (a), 5) ) \
@@ -66,6 +66,11 @@ extern struct options Opts;
         || (0==str_diffn("-?", (a), 3)) \
         || (0==str_diffn("-h", (a), 3)) )
 #define arghelpconf(a) (0==str_diffn("--help_c", (a), 8) )
+#define argverify(a)   (0==str_diffn("--veri", (a), 6) )
+#define argverifypath(a)  ( (0==str_diffn("--verify_p", (a), 10) ) \
+        || (0==str_diffn("--verify_d", (a), 10) ) \
+        || (0==str_diffn("--verify-d", (a), 10) ) \
+        || (0==str_diffn("--verify-p", (a), 10) ) )
 #endif /* OPTIONS_C */
 
 #endif /* OPTIONS_H */
