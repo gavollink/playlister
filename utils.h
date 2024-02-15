@@ -67,6 +67,7 @@ int      URIunescape     (char *str);
 char   * checkFileExists (char *filename, size_t fnamesize);
 char   * tryFindMatch    (char *filename, char *portion);
 void     randomUTarray   (UT_array *orig);
+void     myfatal         (const char* text, ...);
 void     myerror         (const char* text, ...);
 void     mywarning       (const char* text, ...);
 void     myprint         (const char* text, ...);
