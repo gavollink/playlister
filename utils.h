@@ -24,7 +24,7 @@
 
 /* THIS SHOULD NEVER BE MORE THAN 63 strlen()  */
 #ifndef PLAYLISTER_VERSION
-#define PLAYLISTER_VERSION "1.00.47.1"
+#define PLAYLISTER_VERSION "1.01.48"
 #endif
 
 #if 1 == HAS_ARC4RANDOM     /* DEFINED (or not) in configure.h */
@@ -58,6 +58,7 @@ void     initUtils       (void);
 char   * replaceString   (char *str, const char *search
                             , const char *replace, size_t ssz);
 char   * prependString   (char *str, const char *pre, size_t ssz);
+int      removeStringIdx (char *str, size_t index, size_t ssz);
 int      removeString    (char *str, const char *needle, size_t ssz);
 char   * replCharString  (char *str, const char out
                             , const char in, size_t ssz);

@@ -66,6 +66,9 @@ set_list(int plid, char* name, char* value)
         if ( ! want_list(plid, value) ) {
             work->wanted = 0;
         }
+        if ( 4 <= Opts.verbose ) {
+            printf("Found Playlist Named: [%s]\n", work->name);
+        }
     }
     if (0 == str_diffn("Track ID", name, 5) ) {
         if ( work->wanted ) {

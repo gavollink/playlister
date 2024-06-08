@@ -68,7 +68,7 @@ void
 trackInfo()
 {
     struct trackmap *curtrk, *ttmp;
-    if ( 4 <= Opts.verbose ) {
+    if ( 5 <= Opts.verbose ) {
         HASH_ITER(hh, track, curtrk, ttmp) {
             printf("tI: %i (%i) %s/%s/%s %s\n"
                 , curtrk->id, curtrk->time

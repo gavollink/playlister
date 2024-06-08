@@ -42,22 +42,103 @@ createLists()
     }
 }
 
-
+/****************************************************************************
+ * We're taking the NAME of the Playlist and turning it into a filename.
+ * That means we're substituting or skipping invalid characters.
+ */
 char *
 _mk_list_filename(char *filepath, struct list *work, size_t pathsz)
 {
     char filebase[1024] = "\0\0\0\0\0\0";
     char * tmp;
+    // I'm using this to track utf8 expected, but I'm not actually doing
+    // anything with an error, since I'm killing anything over 127 anyway.
+    char utf8step = 0;
 
     strncpy(filebase, work->name, 1024);
-    if (    ( 0 < strlen(filebase) )
-        && ( 1024 > strlen(filebase) )
-        ) {
+    if (   (    0 < strlen(filebase) )
+        && ( 1024 > strlen(filebase) ) )
+    {
         for ( int cx = 0; cx < strlen(filebase); cx++ ) {
-            if ( ' ' == filebase[cx] ) {
-                filebase[cx] = '_';
+            if ( 0 == ( 0x80 & filebase[cx] ) ) {
+                // This is less than 127, so 7-bit clean...
+                if (   ( 0x1F < filebase[cx] )
+                    && ( 0x7f > filebase[cx] ) )
+                {
+                    // This is NOT a control character.
+                    switch ( filebase[cx] ) {
+                        case '#':
+                        case '$':
+                        case '%':
+                        case '!':
+                        case '&':
+                        case '\'':
+                        case '{':
+                        case '"':
+                        case '}':
+                        case ':':
+                        case '\\':
+                        case '@':
+                        case '<':
+                        case '+':
+                        case '>':
+                        case '`':
+                        case '*':
+                        case '|':
+                        case '?':
+                        case '=':
+                        case '/':
+                            char fbcxorig = filebase[cx];
+                            filebase[cx] = '-';
+                            mydebug( "make filename sub '%c'->'%c' [%s]\n",
+                                        fbcxorig, filebase[cx], filebase);
+                            break;
+                        case ' ':
+                            filebase[cx] = '_';
+                            break;
+                    }
+                } /* END ** if ( ( 0x1F < filebase[cx] ) ... ) */
+                else {
+                    // ctrl character territory, skip it
+                    removeStringIdx(filebase, cx, 1024);
+                }
+                if ( 0 < utf8step ) {
+                    // The initial utf8step match was probably not valid,
+                    // so I'm cancelling the utf8step
+                    utf8step = 0;
+                }
+            } /* END ** if ( 0 == ( 0x80 && filebase[cx] ) ) */
+            else {
+                // above 127, either ambiguous `extended` or UTF-8, skip it.
+                // First, look for UTF-8 pattern...
+                if ( 0x80 == ( 0xC0 & filebase[cx] ) ) {
+                    // bin 1000-0000 == ( 1100-0000 & )
+                    // UTF-8 Continuation byte, probably.
+                    if ( 0 < utf8step ) {
+                        utf8step--;
+                    }
+                }
+                else if ( 0xC0 == ( 0xE0 & filebase[cx] ) ) {
+                    // bin 1100-0000 == ( 1110-0000 & )
+                    // UTF-8 Start byte, with two byte total
+                    utf8step = 1;
+                }
+                else if ( 0xE0 == ( 0xF0 & filebase[cx] ) ) {
+                    // bin 1110-0000 == ( 1111-0000 & )
+                    // UTF-8 Start byte, with three byte total
+                    utf8step = 2;
+                }
+                else if ( 0xF0 == ( 0xF8 & filebase[cx] ) ) {
+                    // bin 1111-0000 == ( 1111-1000 & )
+                    // UTF-8 Start byte, with four byte total
+                    utf8step = 3;
+                }
+                mydebug( "make filename remove '%c' in [%s]\n",
+                            filebase[cx], filebase);
+                removeStringIdx(filebase, cx, 1024);
+                cx--;
             }
-        }
+        } /* END ** for ( cx < size of filebase ) */
         if ( '.' != Opts.extension[0] ) {
             strncpy(filebase + strlen(filebase), "."
                     , ( 1024 - strlen(filebase)) );

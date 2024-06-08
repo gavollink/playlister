@@ -182,6 +182,39 @@ prependString(char *str, const char *pre, size_t max)
 
 
 int
+removeStringIdx(char *str, size_t index, size_t ssz)
+{
+    char       *fname = "removeStringIdx";
+    int         advance = 0;
+    int         dozero = 0;
+    size_t      cx = 0;
+
+    for ( cx = 0; cx < ssz; cx++ ) {
+        if ( dozero ) {
+            str[cx] = (char)0;
+        }
+        else {
+            if ( (char)0 == str[cx+advance] ) {
+                dozero = 1;
+            }
+            else {
+                if ( cx == index ) {
+                    advance++;
+                }
+                if ( advance ) {
+                    str[cx] = str[cx+advance];
+                    str[cx+1] = (char)0;
+                    if ( 0 == str[cx] ) {
+                        dozero = 1;
+                    }
+                }
+            }
+        }
+    }
+    return( advance );
+}
+
+int
 removeString(char *str, const char *needle, size_t ssz)
 {
     char       *fname = "removeString";
