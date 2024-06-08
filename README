@@ -13,12 +13,21 @@ TODO LIST
  Lots and lots of testing, expected bug fixes.
 
 Post 1.0 Future TODO list
- Create a check to validate file paths.
  Create a functionality to auto-generate a config file.
 
 CHANGES:
 
-Version: 1.00.?? (future release):
+Version: 1.01.48:
+-- Running with "-v" will show all Playlist names in the source xml
+file.  Also showing all songs now requies "-v -v"
+-- Playlists convert to filenames, now Playlist name characters that
+are not filename safe are removed from the filename.  This could lead
+to awkward names, especially if UTF-8 characters are used.
+If this is a problem for YOUR use case, e-mail me, and I'll add a
+"translate" configuration option to be able to add from/to, but
+if nobody emails, I'll assume that I'm the only one who uses this.
+
+Version: 1.00.47.1:
 README and README.md updates.
 Makefile now includes "configure.h" (or copies it from CONFIGURE.h)
 Now has --help_config to describe a sample configuration file
