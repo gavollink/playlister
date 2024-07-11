@@ -34,7 +34,7 @@ dohelp()
     printf("Version %s\n", Opts.dist_version );
     printf("Extract playlists from iTunes Music Library.xml to m3u\n");
     printf("\n");
-    printf("License: see --about\n");
+    printf("License: CDDL (see --about)\n");
     printf("\n");
     printf("\n");
     printf("-c --config\n");
@@ -193,7 +193,7 @@ doabout()
     printf("agreeing to the terms of the\n");
     printf("Common Development and Distribution License (CDDL) Version 1.0.\n");
     printf("This is included in the source distribution in the file:\n");
-    printf("  CDDLICENSE.txt\n");
+    printf("  LICENSE\n");
     printf("An online copy of which can be found here:\n");
     printf("  https://opensource.org/licenses/cddl1.txt\n");
     printf("\n");
