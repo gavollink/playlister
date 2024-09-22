@@ -54,10 +54,11 @@ uthash:
 	@false
 
 clean:
-	$(MAKE) -f mk.skel ITARGETS="$(CTARGETS)" clean
+	$(MAKE) -f mk.skel ITARGETS="$(ITARGETS)" clean
+	@cd tests && $(MAKE) BUILDDIR=.. clean
 
 distclean dist-clean:
-	$(MAKE) -f mk.skel ITARGETS="$(CTARGETS)" distclean
+	$(MAKE) -f mk.skel ITARGETS="$(ITARGETS)" distclean
 	@if [ -e "configure.mk" ]; then \
 		diff "configure.mk" "configure.dist" 2>&1 >/dev/null; \
 		if [ "0" != "$$?" ]; then \
@@ -70,6 +71,7 @@ distclean dist-clean:
 			rm "configure.mk"; \
 		fi \
 	fi
+	@cd tests && $(MAKE) BUILDDIR=.. distclean
 
 test: playlister
 	@cd tests && $(MAKE) BUILDDIR=.. TARGET=playlister

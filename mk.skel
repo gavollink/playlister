@@ -194,9 +194,24 @@ clean:
 	-@if [ -n "$(BUILD_DIR)" -a -d "$(BUILD_DIR)" ]; then \
 		echo 'rm -rf "$(BUILD_DIR)"'; \
 		rm -rf "$(BUILD_DIR)"; fi
-	-@if [ -n "$(ALT_BUILD_DIR)" -a -d "$(ALT_BUILD_DIR)" ]; then \
-		echo 'rm -rf "$(ALT_BUILD_DIR)"'; \
-		rm -rf "$(ALT_BUILD_DIR)"; fi
+	-@for TGT in $(ITARGETS); do \
+		printf "DEBUG: $(ARCH).$${TGT}\n"; \
+		if [ -e "$(ARCH).$${TGT}" ]; then \
+			echo 'rm -f "$(ARCH).$${TGT}"'; \
+			rm -f "$(ARCH).$${TGT}"; \
+		fi; \
+		printf "DEBUG: default.$${TGT}\n"; \
+		if [ -e "default.$${TGT}" ]; then \
+			echo 'rm -f "default.$${TGT}"'; \
+			rm -f "default.$${TGT}"; \
+		fi; done
+	-@if [ -n "$(ALT_ARCH)" ]; then \
+		for TGT in $(ITARGETS); do \
+			if [ -e "$(ALT_ARCH).$${TGT}" ]; then \
+				echo 'rm -f "$(ALT_ARCH).$${TGT}"'; \
+				rm -f "$(ALT_ARCH).$${TGT}"; \
+			fi; \
+		done; fi
 	-@rm -f $(ITARGETS)
 	-@if [ -e ./.keychain-unlock ]; then rm ./.keychain-unlock; fi
 

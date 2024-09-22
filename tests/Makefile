@@ -8,9 +8,6 @@ endif
 
 all: $(TESTS)
 
-clean:
-	-rm -f Test_List.m3u Test_List.test
-
 test_utils: test_utils.c $(UTILDEPS)
 	$(CC) -o test_utils test_utils.c $(UTILDEPS) $(CFLAGS)
 
@@ -78,9 +75,10 @@ utils.o: ../utils.c
 	gcc -c $< -o $@ $(CFLAGS)
 
 clean:
-	- rm -f *.o
+	-rm -f Test_List.m3u Test_List.test
+	-rm -f *.o
 
-dist-clean: clean
-	- rm -f test_utils
+dist-clean distclean: clean
+	-rm -f test_utils
 
 # vim: sw=4 ts=4 noexpandtab
