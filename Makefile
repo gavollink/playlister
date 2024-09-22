@@ -13,7 +13,7 @@ X_DEPS=configure.h utils.h reader1.h storage.h options.h listm3u.h djb/str.h
 
 all: playlister
 
-playlister: $(MDEP) $(SOURCE) $(X_DEPS)
+playlister: $(MDEP) $(SOURCE) $(X_DEPS) $(UTHASH)
 	$(MAKE) -f mk.skel SOURCE="$(SOURCE)" XDEP="$(X_DEPS)" FINAL=$@ $@
 
 configure.mk: configure.dist
@@ -32,32 +32,34 @@ configure.mk: configure.dist
 		cp $< $@; \
 	fi
 
-$(UTHASH): uthash
-	ln -fs uthash/src/$@
+$(UTHASH): $(UTHASHDIR)/src/uthash.h
+	@ln -s "$(UTHASHDIR)/src/$@"
 
-uthash:
-	@echo "    "
-	@echo "    HEY!  You need a copy of UTHASH locally.  Try this:"
-	@echo "    "
-	@echo "git clone https://github.com/troydhanson/uthash.git"
-	@echo "    original (latest)"
-	@echo "    ---- OR ----"
-	@echo "git clone https://gitlab.home.vollink.com/not-mine/troydhanson/uthash.git"
-	@echo "    my (tested) copy"
-	@echo "    "
-	@echo "    If you have this checked out somewhere else,"
-	@echo "    a softlink to it will work too..."
-	@echo "ln -s ../uthash ."
-	@echo "    "
-	@echo "    Come back when I can find uthash!"
-	@echo "    "
-	@false
+$(UTHASHDIR)/src/uthash.h:
+	@echo "    "; \
+		echo "    HEY!  You need a copy of UTHASH locally.  Try this:"; \
+		echo "    "; \
+		echo "git clone https://github.com/troydhanson/uthash.git"; \
+		echo "    original (latest)"; \
+		echo "    ---- OR ----"; \
+		echo "git clone https://gitlab.home.vollink.com/not-mine/troydhanson/uthash.git"; \
+		echo "    author's (tested) copy"; \
+		echo "    "; \
+		echo "    If you have this checked out somewhere else, set UTHASHDIR"; \
+		echo "    in configure.mk"; \
+		echo "    "; \
+		echo "    NOTE: This Makefile looks for $$UTHASHDIR/src/uthash.h"; \
+		echo "    "; \
+		echo "    Come back when I can find uthash!"; \
+		echo "    "; \
+		false
 
 clean:
 	$(MAKE) -f mk.skel ITARGETS="$(ITARGETS)" clean
 	@cd tests && $(MAKE) BUILDDIR=.. clean
 
 distclean dist-clean:
+	rm -f $(UTHASH)
 	$(MAKE) -f mk.skel ITARGETS="$(ITARGETS)" distclean
 	@if [ -e "configure.mk" ]; then \
 		diff "configure.mk" "configure.dist" 2>&1 >/dev/null; \
