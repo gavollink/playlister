@@ -8,7 +8,7 @@
  * Copyright (c) 2019-2024, Gary Allen Vollink.  http://voll.ink/playlister
  * All rights reserved.
  *
- * Licence to use, see CDDLICENSE.txt file in this distribution.
+ * Licence to use, see LICENSE file in this distribution.
  */
 #ifndef CCOONNFFIIGGUURREE_H
 #define CCOONNFFIIGGUURREE_H 1

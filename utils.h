@@ -6,7 +6,7 @@
  * Copyright (c) 2019-2024, Gary Allen Vollink.  http://voll.ink/playlister
  * All rights reserved.
  *
- * Licence to use, see CDDLICENSE.txt file in this distribution.
+ * Licence to use, see LICENSE file in this distribution.
  */
 #ifndef UTILS_H
 #define UTILS_H 1
@@ -24,7 +24,7 @@
 
 /* THIS SHOULD NEVER BE MORE THAN 63 strlen()  */
 #ifndef PLAYLISTER_VERSION
-#define PLAYLISTER_VERSION "1.01.49"
+#define PLAYLISTER_VERSION "1.02.00"
 #endif
 
 #if 1 == HAS_ARC4RANDOM     /* DEFINED (or not) in configure.h */

@@ -6,7 +6,7 @@
  * Copyright (c) 2019-2024, Gary Allen Vollink.  http://voll.ink/playlister
  * All rights reserved.
  *
- * Licence to use, see CDDLICENSE.txt file in this distribution.
+ * Licence to use, see LICENSE file in this distribution.
  */
 #define OPTIONS_C 1
 #include <stdio.h>     // printf(), fopen()
@@ -34,7 +34,7 @@ dohelp()
     printf("Version %s\n", Opts.dist_version );
     printf("Extract playlists from iTunes Music Library.xml to m3u\n");
     printf("\n");
-    printf("License: CDDL (see --about)\n");
+    printf("License: GNU AGPL3 (see --about)\n");
     printf("\n");
     printf("\n");
     printf("-c --config\n");
@@ -191,11 +191,11 @@ doabout()
     printf("\n");
     printf("This program and it's source code are available for use by\n");
     printf("agreeing to the terms of the\n");
-    printf("Common Development and Distribution License (CDDL) Version 1.0.\n");
+    printf("GNU AFFERO GENERAL PUBLIC LICENSE (GNU AGPL) Version 3.\n");
     printf("This is included in the source distribution in the file:\n");
     printf("  LICENSE\n");
     printf("An online copy of which can be found here:\n");
-    printf("  https://opensource.org/licenses/cddl1.txt\n");
+    printf("  https://www.gnu.org/licenses/agpl-3.0.en.html\n");
     printf("\n");
     exit(0);
 }
