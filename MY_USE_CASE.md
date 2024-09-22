@@ -28,7 +28,7 @@ service on another Linux server.
 
 For the Androids alone, I used to use some of the 
 dedicated iTunes to Android apps (neither of which
-actually function on my devices), but for my other
+actually function on my devices anymore), but for my other
 sources, I needed something with a little bit more
 freedom.
 
@@ -109,16 +109,16 @@ ifdef VERBOSE
 	ADD=-v
 endif
 
-all: tablet
+all: .tablet
 
 force:
-	@-rm -f tablet
+	@-rm -f .tablet
 	$(MAKE) all
 
-tablet: /media/music/DS_Sync/iTunes/iTunes Music Library.xml tablet.conf Makefile
+.tablet: /media/music/DS_Sync/iTunes/iTunes Music Library.xml tablet.conf Makefile
 	@echo playlister $(ADD) -c tablet.conf
 	@../bin/playlister $(ADD) -c tablet.conf
-	@touch tablet
+	@touch .tablet
 
 .PHONY: all force
 ```

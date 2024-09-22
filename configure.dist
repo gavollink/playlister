@@ -1,0 +1,25 @@
+# If the first ones are set command-line,
+# `:=` won't override the values.
+CC:=gcc
+# NOTE: -std=gnu99 will be added to CCFLAGS by mk.skel, don't add -std here
+CCFLAGS:=-Wall -O2
+# DO NOT SET DIRECTLY, BUT THIS IS THE `install' PATTERN...
+## INSTALLDIR=$(DESTDIR)$(exec_prefix)/$(bindir)/
+# Normally, DESTDIR is reserved for chroot style overrides,
+# like for a binary distribution packaging step.
+prefix=
+exec_prefix=$(prefix)
+bindir=bin
+# The include path may need to be modified
+CCFLAGS+=-I/usr/include/libxml2
+LDFLAGS=-lxml2
+
+# MacOS - Set a code signing signature name here.
+# SIGNID=CompanyName Releases
+SIGNID:=
+# MacOS/Sign - If signature is in a non-standard keychain:
+# CHAIN=Offline.keychain-db
+CHAIN:=
+
+# vim: ft=make
+# EOF configure.dist / configure.mk

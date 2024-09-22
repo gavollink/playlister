@@ -107,10 +107,9 @@ streamFile(const char *filename) {
      * Cleanup function for the XML library.
      */
     xmlCleanupParser();
-    /*
-     * this is to debug memory for regression tests
+    /****
+     * xmlMemoryDump was previously called here, but that function is gone.
      */
-    xmlMemoryDump();
 }
 
 #endif

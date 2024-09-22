@@ -241,17 +241,36 @@ cleanLine(char * line)
 {
     char buffer[BUFSIZ];
     char buffer2[BUFSIZ];
-    int          cx = 0;
-    char * indexret = NULL;
+    int           cx = 0;
+    int foundcomment = 0;
+    char  * indexret = NULL;
 
-    indexret = strstr(line, " #");
-    if ( indexret ) {
-        indexret[0] = '\0';
-        indexret = NULL;
-    }
-    else if ( '#' == line[0] ) {
+    /* Find comment at position zero */
+    if ( '#' == line[0] ) {
         line[0] = '\0';
         return( line );
+    }
+    /* Find comment further along */
+    while ( ! foundcomment ) {
+        indexret = strstr(line, "#");
+        if ( indexret ) {
+            indexret--;
+            switch ( *indexret ) {
+                case '\t':
+                case 0x0A:
+                case 0x0B:
+                case 0x0C:
+                case 0x0D:
+                case ' ':
+                    indexret[0] = '\0';
+                    indexret = NULL;
+                    foundcomment = 1;
+                    break;
+            }
+        }
+        else {
+            foundcomment = -1;
+        }
     }
 
     if ( ( indexret = index(line, '=') ) ) {

@@ -1,6 +1,11 @@
 TESTS=clean output nooutput config1 extended utils
 UTILDEPS=utils.o str_len.o str_start.o str_chr.o str_diffn.o
 CFLAGS+= -I$(BUILDDIR)
+
+ifndef BUILDDIR
+$(error Don't use this directly try "cd .. && make test")
+endif
+
 all: $(TESTS)
 
 clean:

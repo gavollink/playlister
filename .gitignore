@@ -4,6 +4,7 @@
 uthash
 *.o
 *.obj
+configure.mk
 utarray.h
 uthash.h
 playlister

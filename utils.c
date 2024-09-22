@@ -184,7 +184,7 @@ prependString(char *str, const char *pre, size_t max)
 int
 removeStringIdx(char *str, size_t index, size_t ssz)
 {
-    char       *fname = "removeStringIdx";
+    // char       *fname = "removeStringIdx";
     int         advance = 0;
     int         dozero = 0;
     size_t      cx = 0;
@@ -370,8 +370,8 @@ checkFileExists(char *filename, size_t fnamesize)
     }
     mywarning( "WARN: Playlist file not found: %s\n", filename );
 
-    strncpy(lcopy, filename, FILENAME_MAX);
-    strncpy(lpart, filename, FILENAME_MAX);
+    strncpy(lcopy, filename, FILENAME_MAX-1);
+    strncpy(lpart, filename, FILENAME_MAX-1);
 
     while ( 0 == done ) {
         if ( NULL == ( findex = rindex(lcopy, '/') ) ) {
@@ -381,11 +381,11 @@ checkFileExists(char *filename, size_t fnamesize)
         else if ( ( '/' == lcopy[0] )
             && ( findex == lcopy ) ) {
             extradebug( "WARN: At first slash in %s\n", lcopy );
-            strncpy(lpart, findex+1, FILENAME_MAX);
+            strncpy(lpart, findex+1, FILENAME_MAX-1);
             done = 1;
         }
         else {
-            strncpy(lpart, findex+1, FILENAME_MAX);
+            strncpy(lpart, findex+1, FILENAME_MAX-1);
             findex[0] = '\0';
         }
         if ( 0 == ( statret = stat( lcopy, &statbuf ) ) ) {
@@ -415,7 +415,7 @@ tryFindMatch(char *filename, char *segment)
     struct dirent        *entry = NULL;
     char workfile[FILENAME_MAX] = "\0\0\0\0\0\0\0\0";
 
-    strncpy(workfile, filename, FILENAME_MAX);
+    strncpy(workfile, filename, FILENAME_MAX-1);
 
     if ( NULL == (fport = strstr(workfile, segment)) ) {
         mywarning("WARNING: tryFindMatch [%s] non matching part [%s].\n"
