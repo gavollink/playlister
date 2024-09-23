@@ -24,7 +24,7 @@ configure.h: configure.dist.h
 		echo "##########################################################"; \
 		false; \
 	else \
-		cp $< $@; \
+		grep -v 'DO NOT EDIT THIS' $< > $@; \
 	fi
 
 configure.mk: configure.dist.mk
@@ -44,7 +44,7 @@ configure.mk: configure.dist.mk
 	fi
 
 $(UTHASH): $(UTHASHDIR)/src/uthash.h
-	@ln -s "$(UTHASHDIR)/src/$@"
+	@ln -fs "$(UTHASHDIR)/src/$@"
 
 $(UTHASHDIR)/src/uthash.h:
 	@echo "    "; \
@@ -92,7 +92,7 @@ test: playlister
 install: $(ITARGETS)
 	$(MAKE) -f mk.skel ITARGETS="$(ITARGETS)" install
 
-.PHONY: all clean dist-clean distclean
+.PHONY: all clean dist-clean distclean test install
 
 # vim: ft=make syntax=make
 # EOF Makefile
