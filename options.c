@@ -216,11 +216,11 @@ initOpts(char *me)
         && ( idx = rindex(me, '/') )
         && ( 1 < strlen(idx) )
         ) {
-        strncpy(newme, idx+1, BUFSIZ);
-        strncpy(Opts.self, newme, 1024);
+        strncpy(newme, idx+1, BUFSIZ-1);
+        strncpy(Opts.self, newme, 1024-1);
     }
     else {
-        strncpy(Opts.self, me, 1024);
+        strncpy(Opts.self, me, 1024-1);
     }
     strncpy(Opts.config, Opts.self, 1018);
     strncpy(Opts.config + strlen(Opts.config), ".conf", 6);
@@ -228,7 +228,7 @@ initOpts(char *me)
         sprintf(Opts.dist_version, "%s", PLAYLISTER_VERSION);
     }
     else {
-        strncpy(Opts.dist_version, "Unknown", 64);
+        strncpy(Opts.dist_version, "Unknown", 63);
     }
     strncpy(Opts.extension, "m3u", 4);
     utarray_new(Opts.playlist, &ut_str_icd);
@@ -278,11 +278,11 @@ cleanLine(char * line)
             && ( strlen(line) > ( indexret - line + 1 ) )
             ) {
             indexret[0] = '\0';
-            strncpy(buffer2, &indexret[1], BUFSIZ);
+            strncpy(buffer2, &indexret[1], BUFSIZ-1);
             cleanLine(buffer2);
             cleanLine(line);
-            strncpy(line + strlen(line), "=", BUFSIZ - strlen(line) );
-            strncpy(line + strlen(line), buffer2, BUFSIZ - strlen(line) );
+            strncpy(line + strlen(line), "=", BUFSIZ - strlen(line) - 1 );
+            strncpy(line + strlen(line), buffer2, BUFSIZ - strlen(line) - 1 );
         }
     }
 
@@ -301,12 +301,12 @@ cleanLine(char * line)
     }
     while ( strlen(line) ) {
         if ( 0x20 >= line[0] ) {
-            strncpy(buffer, &line[1], BUFSIZ);
-            strncpy(line, buffer, BUFSIZ);
+            strncpy(buffer, &line[1], BUFSIZ - 1);
+            strncpy(line, buffer, BUFSIZ - 1);
         }
         else if ( 0x7F == line[0] ) {
-            strncpy(buffer, &line[1], BUFSIZ);
-            strncpy(line, buffer, BUFSIZ);
+            strncpy(buffer, &line[1], BUFSIZ - 1);
+            strncpy(line, buffer, BUFSIZ - 1);
         }
         else {
             break;
@@ -362,7 +362,7 @@ parseConfigOption(char *line)
 
     if ( 0 == str_diffn("itunesxml", buffer1, 5) ) {
         if ( strlen(buffer2) ) {
-            strncpy(Opts.itunes_xml_file, buffer2, 1024);
+            strncpy(Opts.itunes_xml_file, buffer2, 1024 - 1);
         }
         else {
             myfatal("itunesxml config option with no value.\n");
@@ -371,7 +371,7 @@ parseConfigOption(char *line)
     }
     else if ( 0 == str_diffn("output_path", buffer1, 6) ) {
         if ( strlen(buffer2) ) {
-            strncpy(Opts.output_path, buffer2, 1024);
+            strncpy(Opts.output_path, buffer2, 1024 - 1);
         }
         else {
             myfatal("output_path config option with no value.\n");
@@ -380,7 +380,7 @@ parseConfigOption(char *line)
     }
     else if ( 0 == str_diffn("verify_dir", buffer1, 8) ) {
         if ( strlen(buffer2) ) {
-            strncpy(Opts.verify_path, buffer2, 1024);
+            strncpy(Opts.verify_path, buffer2, 1024 - 1);
             Opts.verify = 1;
         }
         else {
@@ -429,7 +429,7 @@ parseConfigOption(char *line)
     }
     else if ( 0 == str_diffn("extension", buffer1, 3) ) {
         if ( strlen(buffer2) ) {
-            strncpy(Opts.extension, buffer2, 64);
+            strncpy(Opts.extension, buffer2, 64 - 1);
         }
         else {
             myfatal("extension config option with no value.\n");
@@ -439,7 +439,7 @@ parseConfigOption(char *line)
     else if ( 0 == str_diffn("location_remove", buffer1, 15) ) {
         if ( strlen(buffer2) ) {
             replCharString(buffer2, '\\', '/', 1024);
-            strncpy(Opts.itune_path, buffer2, 1024);
+            strncpy(Opts.itune_path, buffer2, 1024 - 1);
         }
         else {
             myfatal("location_remove config option with no value.\n");
@@ -448,7 +448,7 @@ parseConfigOption(char *line)
     }
     else if ( 0 == str_diffn("location_replace", buffer1, 16) ) {
         if ( strlen(buffer2) ) {
-            strncpy(Opts.replace_path, buffer2, 1024);
+            strncpy(Opts.replace_path, buffer2, 1024 - 1);
         }
         else {
             myfatal("location_replace config option with no value.\n");
@@ -502,11 +502,11 @@ readConfigFile()
         memset(linebuffer, 0, linebufsiz);
     }
 
-    strncpy(filename, getenv("HOME"), BUFSIZ);
+    strncpy(filename, getenv("HOME"), BUFSIZ - 1);
     strncpy(filename + strlen(filename)
-            , "/.", BUFSIZ - strlen(filename));
+            , "/.", BUFSIZ - strlen(filename) - 1);
     strncpy(filename + strlen(filename)
-            , Opts.config, BUFSIZ - strlen(filename));
+            , Opts.config, BUFSIZ - strlen(filename) - 1);
 
     extradebug("Try Config Filename: %s\n", filename);
 
@@ -517,36 +517,36 @@ readConfigFile()
         switch (cx) {
 #ifdef CONFIGFILE_CUSTOM_PATH
             case 0:
-                strncpy(filename, CONFIGFILE_CUSTOM_PATH, BUFSIZ);
+                strncpy(filename, CONFIGFILE_CUSTOM_PATH, BUFSIZ - 1);
                 if( '/' != filename[strlen(filename)-1] ) {
                     strncpy(filename + strlen(filename)
-                            , "/", BUFSIZ - strlen(filename));
+                            , "/", BUFSIZ - strlen(filename) - 1);
                 }
                 strncpy(filename + strlen(filename)
-                        , Opts.config, BUFSIZ - strlen(filename));
+                        , Opts.config, BUFSIZ - strlen(filename) - 1);
                 break;
 #endif /* CONFIGFILE_CUSTOM_PATH */
             case 1:
-                strncpy(filename, getenv("HOME"), BUFSIZ);
+                strncpy(filename, getenv("HOME"), BUFSIZ - 1);
                 if( '/' != filename[strlen(filename)-1] ) {
                     strncpy(filename + strlen(filename)
-                            , "/", BUFSIZ - strlen(filename));
+                            , "/", BUFSIZ - strlen(filename) - 1);
                 }
                 strncpy(filename + strlen(filename)
-                        , Opts.config, BUFSIZ - strlen(filename));
+                        , Opts.config, BUFSIZ - strlen(filename) - 1);
                 break;
             case 2:
-                strncpy(filename, "/usr/local/etc/", BUFSIZ);
+                strncpy(filename, "/usr/local/etc/", BUFSIZ - 1);
                 strncpy(filename + strlen(filename)
-                        , Opts.config, BUFSIZ - strlen(filename));
+                        , Opts.config, BUFSIZ - strlen(filename) - 1);
                 break;
             case 3:
-                strncpy(filename, "/etc/", BUFSIZ);
+                strncpy(filename, "/etc/", BUFSIZ - 1);
                 strncpy(filename + strlen(filename)
-                        , Opts.config, BUFSIZ - strlen(filename));
+                        , Opts.config, BUFSIZ - strlen(filename) - 1);
                 break;
             case 4:
-                strncpy(filename, Opts.config, BUFSIZ);
+                strncpy(filename, Opts.config, BUFSIZ - 1);
                 break;
         }
         if ( 4 < cx ) {
@@ -629,7 +629,7 @@ parseOpts(int argc, char **argv)
         && ( argv[1][0] != '-' )
         && ( 2 == argc )
         ) {
-        strncpy(Opts.itunes_xml_file, argv[1], 1024);
+        strncpy(Opts.itunes_xml_file, argv[1], 1024 - 1);
         return;
     }
 
@@ -638,7 +638,7 @@ parseOpts(int argc, char **argv)
         if ( config(argv[cx]) ) {
             if ( ( cx+1 ) < argc ) {
                 cx++;
-                strncpy(Opts.config, argv[cx], 1024);
+                strncpy(Opts.config, argv[cx], 1024 - 1);
                 Opts.config_requested = 1;
             }
         }
@@ -675,7 +675,7 @@ parseOpts(int argc, char **argv)
         else if ( itunesxml(argv[cx]) ) {
             if ( ( cx+1 ) < argc ) {
                 cx++;
-                strncpy(Opts.itunes_xml_file, argv[cx], 1024);
+                strncpy(Opts.itunes_xml_file, argv[cx], 1024 - 1);
             }
             else {
                 myerror("%s passed with no data.\n", argv[cx]);
@@ -685,7 +685,7 @@ parseOpts(int argc, char **argv)
         else if ( origpath(argv[cx]) ) {
             if ( ( cx+1 ) < argc ) {
                 cx++;
-                strncpy(Opts.itune_path, argv[cx], 1024);
+                strncpy(Opts.itune_path, argv[cx], 1024 - 1);
             }
             else {
                 myerror("%s passed with no data.\n", argv[cx]);
@@ -695,7 +695,7 @@ parseOpts(int argc, char **argv)
         else if ( newpath(argv[cx]) ) {
             if ( ( cx+1 ) < argc ) {
                 cx++;
-                strncpy(Opts.replace_path, argv[cx], 1024);
+                strncpy(Opts.replace_path, argv[cx], 1024 - 1);
             }
             else {
                 myerror("%s passed with no data.\n", argv[cx]);
@@ -728,7 +728,7 @@ parseOpts(int argc, char **argv)
         else if ( output(argv[cx]) ) {
             if ( ( cx+1 ) < argc ) {
                 cx++;
-                strncpy(Opts.output_path, argv[cx], 1024);
+                strncpy(Opts.output_path, argv[cx], 1024 - 1);
             }
             else {
                 myerror("%s passed with no data.\n", argv[cx]);
@@ -739,7 +739,7 @@ parseOpts(int argc, char **argv)
             if ( argverifypath(argv[cx]) ) {
                 if ( ( cx+1 ) < argc ) {
                     cx++;
-                    strncpy(Opts.verify_path, argv[cx], 1024);
+                    strncpy(Opts.verify_path, argv[cx], 1024 - 1);
                     Opts.verify = 1;
                 } else {
                     myerror("%s passed with no data.\n", argv[cx]);
@@ -755,7 +755,7 @@ parseOpts(int argc, char **argv)
         else if ( extension(argv[cx]) ) {
             if ( ( cx+1 ) < argc ) {
                 cx++;
-                strncpy(Opts.extension, argv[cx], 64);
+                strncpy(Opts.extension, argv[cx], 64 - 1);
             }
             else {
                 myerror("%s passed with no data.\n", argv[cx]);

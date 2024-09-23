@@ -50,7 +50,6 @@ char *
 _mk_list_filename(char *filepath, struct list *work, size_t pathsz)
 {
     char filebase[1024] = "\0\0\0\0\0\0";
-    char * tmp;
     // I'm using this to track utf8 expected, but I'm not actually doing
     // anything with an error, since I'm killing anything over 127 anyway.
     char utf8step = 0;
@@ -142,10 +141,10 @@ _mk_list_filename(char *filepath, struct list *work, size_t pathsz)
         } /* END ** for ( cx < size of filebase ) */
         if ( '.' != Opts.extension[0] ) {
             strncpy(filebase + strlen(filebase), "."
-                    , ( 1024 - strlen(filebase)) );
+                    , ( 1024 - strlen(filebase) - 1 ) );
         }
         strncpy(filebase + strlen(filebase), Opts.extension
-                , ( 1024 - strlen(filebase)) );
+                , ( 1024 - strlen(filebase) - 1 ) );
         mydebug("List %s will be created as filebase [%s]\n"
                 , work->name, filebase);
     }

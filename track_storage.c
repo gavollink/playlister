@@ -40,27 +40,27 @@ _set_track(int trid,  char* name, char* value)
         Stats.tracks++;
     }
     if (0 == str_diffn("Name", name, 5) ) {
-        strncpy(work->name, value, 1024);
+        strncpy(work->name, value, 1023);
     }
     else if (0 == str_diffn("Total Time", name, 11) ) {
         work->time = atoi(value);
     }
     else if (0 == str_diffn("Location", name, 6) ) {
         URIunescape(value);
-        strncpy(work->file, value, 1024);
+        strncpy(work->file, value, 1023);
     }
     else if (0 == str_diffn("Album", name, 6) ) {
-        strncpy(work->album, value, 1024);
+        strncpy(work->album, value, 1023);
     }
     else if (0 == str_diffn("Album Artist", name, 13) ) {
         // Always prefer the Album Artist.
-        strncpy(work->artist, value, 1024);
+        strncpy(work->artist, value, 1023);
     }
     else if (  (0 == str_diffn("Artist", name, 7))
             && (0 == strlen(work->artist))
         ) {
         // Always prefer the Album Artist over Artist.
-        strncpy(work->artist, value, 1024);
+        strncpy(work->artist, value, 1023);
     }
 }
 

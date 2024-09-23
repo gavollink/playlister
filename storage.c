@@ -157,7 +157,6 @@ set_node(int depth, int ntype, char* name, int emptyel, int hasval, char* value)
 {
     char   trid[1024] = "\0\0\0";
     struct level *work, *prevwork = NULL;
-    int    cx         = 0;
     int    init_level = node_alloc(depth, ntype);
 
     HASH_FIND_INT(node_tree, &node_depth, work);
@@ -202,21 +201,21 @@ set_node(int depth, int ntype, char* name, int emptyel, int hasval, char* value)
         if ( 0 == str_diffn( "key", name, 4 ) ) {
             work->is_key = 1;
             work->lvl_state = 1;
-            strncpy( work->open_el, name, 1024 );
+            strncpy( work->open_el, name, 1024 - 1);
             strncpy( work->open_text, "\0\0", 3 );
             strncpy( work->sibling_el, "\0\0", 3 );
             strncpy( work->sibling_text, "\0\0", 3 );
         }
         else if ( 0 == strlen( work->open_el ) ) {
             work->lvl_state = 1;
-            strncpy( work->open_el, name, 1024 );
+            strncpy( work->open_el, name, 1024 - 1);
             strncpy( work->open_text, "\0\0", 3 );
             strncpy( work->sibling_el, "\0\0", 3 );
             strncpy( work->sibling_text, "\0\0", 3 );
         }
         else {
             work->lvl_state = 2;
-            strncpy( work->sibling_el, name, 1024 );
+            strncpy( work->sibling_el, name, 1024 - 1);
             strncpy( work->sibling_text, "\0\0", 3 );
         }
     }
@@ -297,10 +296,10 @@ set_node(int depth, int ntype, char* name, int emptyel, int hasval, char* value)
     }
     else if ( 3 == ntype ) {    // TEXT (between elements)
         if ( 1 == work->lvl_state ) {
-            strncpy( work->open_text, value, 1024 );
+            strncpy( work->open_text, value, 1024 - 1 );
         }
         else if ( 2 == work->lvl_state ) {
-            strncpy( work->sibling_text, value, 1024 );
+            strncpy( work->sibling_text, value, 1024 - 1 );
         }
         else {
             mydebug("sn:#text [%s], but nowhere to put it.\n", value);

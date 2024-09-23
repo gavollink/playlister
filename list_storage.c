@@ -44,7 +44,6 @@ int
 set_list(int plid, char* name, char* value)
 {
     struct list *work = NULL;
-    int cx = 0;
 
     HASH_FIND_INT(playlist, &plid, work);
     if ( NULL == work ) {
@@ -62,7 +61,7 @@ set_list(int plid, char* name, char* value)
         HASH_ADD_INT(playlist, id, work);
     }
     if (0 == str_diffn("Name", name, 5) ) {
-        strncpy(work->name, value, 1024);
+        strncpy(work->name, value, 1023);
         if ( ! want_list(plid, value) ) {
             work->wanted = 0;
         }
