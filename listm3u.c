@@ -54,6 +54,7 @@ _mk_list_filename(char *filepath, struct list *work, size_t pathsz)
     // I'm using this to track utf8 expected, but I'm not actually doing
     // anything with an error, since I'm killing anything over 127 anyway.
     char utf8step = 0;
+    char fbcxorig = 0;
 
     strncpy(filebase, work->name, 1024);
     if (   (    0 < strlen(filebase) )
@@ -88,7 +89,7 @@ _mk_list_filename(char *filepath, struct list *work, size_t pathsz)
                         case '?':
                         case '=':
                         case '/':
-                            char fbcxorig = filebase[cx];
+                            fbcxorig = filebase[cx];
                             filebase[cx] = '-';
                             mydebug( "make filename sub '%c'->'%c' [%s]\n",
                                         fbcxorig, filebase[cx], filebase);
