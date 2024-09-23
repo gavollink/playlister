@@ -17,6 +17,25 @@ LDFLAGS=-lxml2
 # IF UTHASHDIR IS SOMEWHERE ELSE, NOTE IT HERE
 UTHASHDIR?=uthash
 
+########################################
+# FEATURES
+########################################
+
+# HAS_ARC4RANDOM
+# man arc4random -- should display page if the system has it.
+#
+# NOTE: On LINUX, this is preferred over the default, and setting this
+# may need tweaking the LDFLAGS below to include whatever
+# library stores this on YOUR system (on Deb-like, this is -lbsd).
+#
+# HAS_ARC4RANDOM=1
+#
+# These are set IF the above is uncommented
+ifdef HAS_ARC4RANDOM
+CCFLAGS+=-DHAS_ARC4RANDOM=1
+LDFLAGS+=-lbsd
+endif
+
 # MacOS - Set a code signing signature name here.
 # SIGNID=CompanyName Releases
 SIGNID:=

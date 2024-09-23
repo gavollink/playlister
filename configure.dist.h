@@ -24,13 +24,6 @@
  */
 
 /***************************************
- * BINARY
- * Playlister will always use argv[0] to figure out its own name.
- * Thus, where BINARY is mentioned below, it is only to illustrate
- * the base-name of the running program (whatever it maybe called).
- */
-
-/***************************************
  * CONFIGFILE_CUSTOM_PATH -- If set, Playlister will look for
  * a configuration file there second.
  * See next comment group.
@@ -42,7 +35,7 @@
  * NOTE Config file search order:
  **
  * 1- $(HOME)/.$(TARGET).conf
- * 2 SKIPPED if not defined:
+ * 2 SKIPPED if not defined
  *  - $(CONFIGFILE_CUSTOM_PATH)/$(TARGET).conf
  * 3- $(HOME)/$(TARGET).conf
  * 4- /usr/local/etc/$(TARGET).conf
@@ -56,17 +49,6 @@
  * package.  I can't be bothered for this few choices, all of which
  * will work with default fallbacks anyway.
  */
-
-/***************************************
- * HAS_ARC4RANDOM
- * man arc4random -- should display page if the system has it.
- *
- * NOTE: On LINUX, this is preferred over the default, and setting this
- * may need tweaking the Makefile as well to include whatever
- * library stores this on YOUR system (on Deb-like, this is -lbsd).
- */
-
-// #define HAS_ARC4RANDOM 1
 
 /***************************************
  * HAS_SRANDDEV

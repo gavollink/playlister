@@ -23,6 +23,10 @@ Look at the README (not the same as this) for changes between release tags.
 
 ## Makefile Inefficiency
 
+UPDATE: This is /almost/ fixed, current state is broken in other ways,
+but the build itself is in a much better state (ancillary targets are broken
+in tagged releases 1.01.49 and 1.02.00).
+
 The way the Makefile is built to be able to support univeral binaries on 
 macOS (M + x86), is not done in a great way and it forces the object files
 to be deleted during the build process (so it can rebuild for the second

@@ -17,6 +17,14 @@ Post 1.0 Future TODO list
 
 CHANGES:
 
+Version: 1.02.00:
+-- Change license to GNU AGPL
+-- Don't use this one yet (Makefile problems still being found).
+
+Version: 1.01.49:
+-- Makefile overhaul
+-- Don't use this one yet (Makefile problems still being found)
+
 Version: 1.01.48:
 -- Running with "-v" will show all Playlist names in the source xml
 file.  Also showing all songs now requies "-v -v"

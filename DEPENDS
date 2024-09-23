@@ -39,9 +39,7 @@ arc4random:
         libbsd
     Package Name for compiling:
         libbsd-dev
-        Update   "configure.h": uncomment "// #define HAS_ARC4RANDOM 1"
-                                           ^^^
-        ALSO Update "Makefile": uncomment "# LFLAGS+=-lbsd"
-                                           ^^
+        Update "configure.mk": uncomment "# HAS_ARC4RANDOM=1"
+                                          ^^
 
 # playlister/DEPENDS
