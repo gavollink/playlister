@@ -25,4 +25,4 @@ SIGNID:=
 CHAIN:=
 
 # vim: ft=make
-# EOF configure.dist / configure.mk
+# EOF configure.dist.mk / configure.mk

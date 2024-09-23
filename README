@@ -29,7 +29,7 @@ if nobody emails, I'll assume that I'm the only one who uses this.
 
 Version: 1.00.47.1:
 README and README.md updates.
-Makefile now includes "configure.h" (or copies it from CONFIGURE.h)
+Makefile now includes "configure.h" (or copies it from configure.dist.h)
 Now has --help_config to describe a sample configuration file
 
 Version: 1.00.47:

@@ -14,7 +14,7 @@
 #include <locale.h>      // setlocale()
 #include <dirent.h>      // opendir(), readdir()
 #include "utarray.h"
-#include "configure.h"   // Created by Makefile from CONFIGURE.h
+#include "configure.h"   // Created by Makefile from configure.dist.h
 
 /***************************************
  * Dan J. Bernstien code (Public Domain) -- included in this package.

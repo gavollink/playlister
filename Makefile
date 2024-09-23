@@ -16,13 +16,24 @@ all: playlister
 playlister: $(MDEP) $(SOURCE) $(X_DEPS) $(UTHASH)
 	$(MAKE) -f mk.skel SOURCE="$(SOURCE)" XDEP="$(X_DEPS)" FINAL=$@ $@
 
-configure.mk: configure.dist
+configure.h: configure.dist.h
+	@if [ -e "$@" ]; then \
+		echo "##########################################################"; \
+		echo "####  Distribution's $< is newer than $@"; \
+		echo "####   please compare and update $@ manually."; \
+		echo "##########################################################"; \
+		false; \
+	else \
+		cp $< $@; \
+	fi
+
+configure.mk: configure.dist.mk
 	@if [ -e "$@" ]; then \
 		NEWCONF=`cat $@ | grep -v '^#' | awk -F'[?:+=]' '$$1 != "" {print $$1}' | sort`; \
 		OLDCONF=`cat $< | grep -v '^#' | awk -F'[?:+=]' '$$1 != "" {print $$1}' | sort`; \
 		if [ "$${NEWCONF}" != "$${OLDCONF}" ]; then \
 			echo "##########################################################"; \
-			echo "####  Distribution's configure.dist is newer than $@"; \
+			echo "####  Distribution's $< is newer than $@"; \
 			echo "####   please compare and update $@ manually."; \
 			echo "##########################################################"; \
 			false; \
@@ -62,7 +73,7 @@ distclean dist-clean:
 	rm -f $(UTHASH)
 	$(MAKE) -f mk.skel ITARGETS="$(ITARGETS)" distclean
 	@if [ -e "configure.mk" ]; then \
-		diff "configure.mk" "configure.dist" 2>&1 >/dev/null; \
+		diff "configure.mk" "configure.dist.mk" 2>&1 >/dev/null; \
 		if [ "0" != "$$?" ]; then \
 			echo "##########################################################"; \
 			echo "#### Modified configure.mk exists, remove manually..."; \
