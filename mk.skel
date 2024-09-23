@@ -95,21 +95,21 @@ universal.$(FINAL): x86_64.$(FINAL) arm64.$(FINAL)
 $(ARCH).$(FINAL): $(OBJS)
 	@echo "    # Linking $@ in `dirname $@` from $(OBJS)"
 ifeq ($(shell test "Darwin" = "$(SYS)" -a "x86_64" = "$(ARCH)"; echo $$?), 0)
-	$(CC) $(TARGET_X86_64) $(LDFLAGS) -o $@ $(OBJS)
+	$(CC) $(TARGET_X86_64) -o $@ $(OBJS) $(LDFLAGS)
 else ifeq ($(shell test "Darwin" = "$(SYS)"; echo $$?), 0)
-	$(CC) $(TARGET_ARM64) $(LDFLAGS) -o $@ $(OBJS)
+	$(CC) $(TARGET_ARM64) -o $@ $(OBJS) $(LDFLAGS)
 else
-	$(CC) $(LDFLAGS) -o $@ $(OBJS)
+	$(CC) -o $@ $(OBJS) $(LDFLAGS)
 endif
 
 $(ALT_ARCH).$(FINAL): $(ALT_OBJS)
 	@echo "    # Linking $@ in `dirname $@` from $(ALT_OBJS)"
 ifeq ($(shell test "Darwin" = "$(SYS)" -a "x86_64" = "$(ALT_ARCH)"; echo $$?), 0)
-	$(CC) $(TARGET_X86_64) $(LDFLAGS) -o $@ $(ALT_OBJS)
+	$(CC) $(TARGET_X86_64) -o $@ $(ALT_OBJS) $(LDFLAGS)
 else ifeq ($(shell test "Darwin" = "$(SYS)"; echo $$?), 0)
-	$(CC) $(TARGET_ARM64) $(LDFLAGS) -o $@ $(ALT_OBJS)
+	$(CC) $(TARGET_ARM64) -o $@ $(ALT_OBJS) $(LDFLAGS)
 else
-	$(CC) $(LDFLAGS) -o $@ $(ALT_OBJS)
+	$(CC) -o $@ $(ALT_OBJS) $(LDFLAGS)
 endif
 
 $(OBJS): $(BUILD_DIR)/%.o: %.c $(X_DEPS)
