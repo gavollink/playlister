@@ -68,7 +68,7 @@ replaceString(char *str, const char *search, const char *replace, size_t max)
         return str;
     }
 
-    if ( NULL == ( buffer = malloc(max) ) ) {
+    if ( NULL == ( buffer = malloc(max+1) ) ) {
         mywarning("%s: Unable to allocate buffer size, %lli: %s\n"
                 , fname, max, strerror(errno));
         return NULL;
@@ -356,7 +356,203 @@ myfatal(const char* text, ...)
 }
 
 char *
+spaces(char *buff, size_t bufsiz, int count)
+{
+    if ( count + 1 > bufsiz ) {
+        myfatal(
+            "spaces() asked for count %d on a buffer of %ld.\n",
+            count,
+            bufsiz
+        );
+        exit(15);
+    }
+    char *p = buff;
+    int cx = count;
+    while ( cx-- > 0 ) {
+        *p++ = ' ';
+        *p   = 0;
+    }
+    return buff;
+}
+
+char *
+carrot(char *buff, size_t bufsiz, int count)
+{
+    if ( count + 2 > bufsiz ) {
+        myfatal(
+            "carrot() asked for count %d on a buffer of %ld.\n",
+            count,
+            bufsiz
+        );
+        exit(15);
+    }
+    char *p = buff;
+    int cx = count;
+    while ( cx-- > 0 ) {
+        *p++ = ' ';
+    }
+    *p++ = '^';
+    *p = 0;
+    return buff;
+}
+
+char *
 checkFileExists(char *filename, size_t fnamesize)
+{
+    struct stat       statbuf;
+    int               statret = 0;
+    char  lcopy[FILENAME_MAX] = "\0\0\0\0\0\0\0\0";
+    char  lwork[FILENAME_MAX] = "\0\0\0\0\0\0\0\0";
+    char  lpart[FILENAME_MAX] = "\0\0\0\0\0\0\0\0";
+    char  erbuf[FILENAME_MAX] = "\0\0\0\0\0\0\0\0";
+    char              *findex = NULL;
+    int                  loop = 0;
+    size_t         nxslashidx = 0;
+    size_t           slashidx = 0;
+    size_t             curlen = 0;
+
+    slashidx = strlen(filename);
+    if ( 0 == slashidx ) {
+        myerror(
+            "checkFileExists("", %l): filename is empty (zero bytes).",
+            fnamesize
+        );
+        return NULL;
+    }
+    if ( FILENAME_MAX <= slashidx ) {
+        myerror(
+            "checkFileExists(\"...\", %l): filename larger than FILENAME_MAX (%l).",
+            fnamesize,
+            FILENAME_MAX
+        );
+        myerror("\t[%s]", filename);
+        return NULL;
+    }
+
+    // If the filename exists, just return the filename.
+    if ( 0 == ( statret = stat( filename, &statbuf ) ) ) {
+        return filename;
+    }
+
+    mywarning(
+        "checkFileExists(\"%s\"): does not exist.\n",
+        filename
+    );
+
+    // If not, we're going to grow lpart in steps, and look for
+    // ways to fix the whole path...
+
+    // First local caopy filename, so we aren't messing with it here.
+    strncpy(lcopy, filename, FILENAME_MAX-1);
+    findex = lcopy;
+
+    slashidx = 0;
+    while ( findex ) {
+        loop++;
+        if ( ( 1 == loop ) && ( '/' == lcopy[0] ) ) {
+            slashidx = 0;
+            strncpy(lwork, "/", 2);
+            if ( 0 != ( statret = stat( lwork, &statbuf ) ) ) {
+                myerror(
+                    "checkFileExists: Unable to stat '%s': unrecoverable",
+                    lpart
+                );
+                exit(16);
+            }
+        }
+        if (( findex = strchr(lcopy + slashidx + 1, '/') )) {
+            memset(lwork, 0, FILENAME_MAX);
+            memset(lpart, 0, FILENAME_MAX);
+
+            nxslashidx = findex - lcopy;
+            curlen = (( nxslashidx ) - (slashidx + 1));
+
+            //myerror("checkFileExists Debug Break: [%d]\n", loop);
+            //myerror("lcopy: [%s]\n", lcopy);
+            //myerror("\tlast slash at [%ld]\n", slashidx);
+            //myerror("\tnext slash at [%ld]\n", nxslashidx);
+            //myerror("\tcur length is [%ld]\n", curlen);
+
+            if ( FILENAME_MAX-1 <= slashidx ) {
+                myerror(
+                    "checkFileExists, segment filesize beyond FILENAME_MAX\n"
+                );
+                exit(6);
+            }
+
+            strncpy(lwork, lcopy, FILENAME_MAX - 1);
+            lwork[slashidx] = 0;
+
+            mydebug("lwork: [%s]\n", lwork);
+
+            strncpy(lpart, lcopy + slashidx + 1, curlen);
+            mydebug(
+                "lpart: %s[%s]\n",
+                spaces(erbuf, FILENAME_MAX - 1, strlen(lwork) + 1),
+                lpart
+            );
+            mydebug(
+                "index: %s[%s]\n",
+                spaces(erbuf, FILENAME_MAX - 1, strlen(lwork) + strlen(lpart) + 1),
+                findex
+            );
+
+            strncat(
+                lwork,
+                "/",
+                ((FILENAME_MAX - 2) - strlen(lwork))
+            );
+            strncat(
+                lwork,
+                lpart,
+                ((FILENAME_MAX - 1) - (strlen(lpart) + strlen(lwork)))
+            );
+
+            mydebug("L[%d]: [%s]\n", loop, lwork);
+            if ( 0 != ( statret = stat( lwork, &statbuf ) ) ) {
+                if ( NULL == tryFindMatch(lcopy, lpart) ) {
+                    findex = NULL;
+                    myerror("Unable to find file, path broken at carrot (^):\n");
+                    myerror("[%s]\n", filename);
+                    myerror(
+                        " %s\n",
+                        carrot(erbuf, FILENAME_MAX - 1, slashidx + 1),
+                        lwork
+                    );
+                    return NULL;
+                }
+            }
+        }
+        slashidx = nxslashidx;
+    } // END of :: while ( 0 == done )
+
+    if ( strlen(lwork) < strlen(lcopy) ) {
+        memset(lpart, 0, FILENAME_MAX);
+        strncpy(
+            lpart,
+            lcopy + nxslashidx + 1,
+            ((FILENAME_MAX - 1) + (strlen(lwork) - nxslashidx))
+        );
+    }
+        mydebug("lwork: [%s]\n", lwork);
+        mydebug(
+            "lpart: %s[%s]\n",
+            spaces(erbuf, FILENAME_MAX - 1, strlen(lwork) + 1),
+            lpart
+        );
+    if ( 0 == ( statret = stat( lcopy, &statbuf ) ) ) {
+        strncpy(filename, lcopy, fnamesize);
+        return filename;
+    }
+    else if ( NULL != tryFindMatch(lcopy, lpart) ) {
+        strncpy(filename, lcopy, fnamesize);
+        return filename;
+    }
+    return NULL;
+}
+
+char *
+checkFileExists_old(char *filename, size_t fnamesize)
 {
     struct stat       statbuf;
     int               statret = 0;
@@ -397,8 +593,8 @@ checkFileExists(char *filename, size_t fnamesize)
         }
     }
 
-    if ( NULL != tryFindMatch(filename, lpart) ) {
-        return checkFileExists(filename, fnamesize);
+    if ( NULL != tryFindMatch(lcopy, lpart) ) {
+        return checkFileExists(lcopy, fnamesize);
     }
     
     mywarning( "Segment [%s]\n", lpart );
@@ -425,28 +621,38 @@ tryFindMatch(char *filename, char *segment)
     *fport = '\0';
 
     if ( NULL == ( dh = opendir(workfile) ) ) {
-        mywarning("WARN: Unable to opendir %s: %s\n"
+        myerror("Unable to opendir %s: %s\n"
                     , workfile, strerror(errno) );
         return NULL;
     }
 
     while(NULL != ( entry = readdir(dh) )) {
         if ( 0 == strcmp( entry->d_name, segment ) ) {
-            myerror( "tryFindMatch, segment found without modify.\n" );
-            myerror( "tryFindMatch, segment  [%s].\n"
+            mywarning( "tryFindMatch, segment found without modify.\n" );
+            mywarning( "tryFindMatch, segment  [%s].\n"
                         , segment );
-            myerror( "tryFindMatch, filesystem %s [%s].\n"
+            mywarning( "tryFindMatch, filesystem %s [%s].\n"
                         , ((DT_DIR&entry->d_type)?"dir":"file")
                         , entry->d_name );
             closedir(dh);
-            exit(6);
+            return(filename);
         }
         else if ( 0 == strcasecmp( entry->d_name, segment ) ) {
-            strncpy(fport, entry->d_name, str_len(entry->d_name));
+            *fport = segment[0];
+            replaceString(
+                workfile,
+                segment,
+                entry->d_name,
+                FILENAME_MAX
+            );
+            myprint("tryFindMatch [%s]\n", filename);
             strcpy(filename, workfile);
-            mywarning( "%s %s\n"
-                        , "RECOVER: tryFindMatch found a match with different"
-                        , "letter case, replaced portion, trying again." );
+            myprint(
+                "tryFindMatch replacing [%s] with [%s]\n[%s]\n",
+                segment,
+                entry->d_name,
+                filename
+            );
             return(filename);
         }
     }

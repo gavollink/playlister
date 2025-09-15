@@ -1,4 +1,4 @@
-TESTS=clean output nooutput config1 extended utils
+TESTS=clean utils output nooutput config1 extended
 UTILDEPS=utils.o str_len.o str_start.o str_chr.o str_diffn.o
 CFLAGS+= -I$(BUILDDIR)
 
@@ -30,6 +30,7 @@ utils: test_utils
 	else \
 		echo "test_utils 2 : passed"; \
 	fi
+	./test_utils "$${PWD}"
 
 config1:
 	$(BUILDDIR)/$(TARGET) -v -v --conf test1.conf
